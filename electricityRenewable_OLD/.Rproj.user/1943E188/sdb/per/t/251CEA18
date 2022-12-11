@@ -1,0 +1,28 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1474826703120.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "251CEA18",
+    "lastKnownWriteTime" : 1885692960,
+    "last_content_update" : -2147483648,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "x6c0uymp32",
+        "caption" : "datosD",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=datosD&cache_key=x6c0uymp32",
+        "displayedObservations" : 308,
+        "environment" : "",
+        "object" : "datosD",
+        "totalObservations" : 308,
+        "variables" : 4
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

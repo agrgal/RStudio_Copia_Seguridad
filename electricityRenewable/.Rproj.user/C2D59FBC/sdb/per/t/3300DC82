@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "# Intenta conseguir el nombre del país según el código\ncodigos=factor(codigos)\nlistadoPaises <- read.csv(\"~/R/electricityRenewable/paises.csv\")\n",
+    "created" : 1477171749601.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1958134750",
+    "id" : "3300DC82",
+    "lastKnownWriteTime" : 1477171930,
+    "last_content_update" : -2147483648,
+    "path" : "~/R/electricityRenewable/paises_en_data_frame_02.R",
+    "project_path" : "paises_en_data_frame_02.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

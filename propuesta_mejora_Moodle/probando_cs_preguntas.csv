@@ -1,0 +1,1166 @@
+ID;Pregunta;Modificador;Valor;Departamento
+1;Marca temporal;;4/12/2020 12:30:34;
+2;Marca temporal;;9/12/2020 12:27:12;
+3;Marca temporal;;9/12/2020 12:29:01;
+4;Marca temporal;;9/12/2020 12:29:48;
+5;Marca temporal;;9/12/2020 12:34:30;
+6;Marca temporal;;9/12/2020 13:34:29;
+7;Marca temporal;;9/12/2020 13:38:15;
+8;Marca temporal;;9/12/2020 14:01:14;
+9;Marca temporal;;9/12/2020 14:04:32;
+10;Marca temporal;;9/12/2020 14:39:39;
+11;Marca temporal;;9/12/2020 14:43:32;
+12;Marca temporal;;9/12/2020 15:31:05;
+13;Marca temporal;;9/12/2020 16:12:49;
+14;Marca temporal;;9/12/2020 16:39:06;
+15;Marca temporal;;9/12/2020 16:51:29;
+16;Marca temporal;;9/12/2020 16:55:34;
+17;Marca temporal;;9/12/2020 17:21:50;
+18;Marca temporal;;9/12/2020 18:31:44;
+19;Marca temporal;;9/12/2020 18:57:20;
+20;Marca temporal;;9/12/2020 18:58:22;
+21;Marca temporal;;9/12/2020 20:30:55;
+22;Marca temporal;;9/12/2020 20:34:37;
+23;Marca temporal;;10/12/2020 12:42:44;
+24;Marca temporal;;10/12/2020 13:20:53;
+25;Marca temporal;;10/12/2020 20:34:54;
+26;Marca temporal;;10/12/2020 20:47:14;
+27;Marca temporal;;10/12/2020 20:47:52;
+28;Marca temporal;;10/12/2020 23:32:08;
+29;Marca temporal;;11/12/2020 11:58:37;
+30;Marca temporal;;12/12/2020 13:08:27;
+31;Marca temporal;;13/12/2020 18:55:38;
+32;Marca temporal;;14/12/2020 10:13:25;
+33;Marca temporal;;14/12/2020 12:09:14;
+34;Marca temporal;;14/12/2020 12:10:31;
+35;Marca temporal;;14/12/2020 14:10:22;
+36;Marca temporal;;14/12/2020 14:38:41;
+37;Marca temporal;;14/12/2020 15:42:57;
+38;Marca temporal;;14/12/2020 16:01:27;
+39;Marca temporal;;14/12/2020 16:17:45;
+40;Marca temporal;;14/12/2020 18:22:08;
+41;Marca temporal;;14/12/2020 19:57:31;
+42;Marca temporal;;15/12/2020 9:16:07;
+43;Marca temporal;;15/12/2020 10:37:25;
+44;Marca temporal;;15/12/2020 12:16:11;
+45;Marca temporal;;15/12/2020 14:04:52;
+46;Marca temporal;;17/12/2020 8:18:28;
+47;Marca temporal;;17/12/2020 8:30:16;
+48;Marca temporal;;17/12/2020 9:49:24;
+49;Marca temporal;;17/12/2020 10:03:22;
+50;Marca temporal;;17/12/2020 10:22:19;
+51;Marca temporal;;17/12/2020 11:05:11;
+52;Marca temporal;;17/12/2020 11:11:53;
+53;Marca temporal;;17/12/2020 11:41:26;
+54;Marca temporal;;17/12/2020 12:09:51;
+55;Marca temporal;;17/12/2020 13:13:20;
+56;Marca temporal;;17/12/2020 16:29:54;
+57;Marca temporal;;18/12/2020 8:59:31;
+58;Marca temporal;;18/12/2020 12:29:15;
+59;Marca temporal;;18/12/2020 13:35:26;
+60;Marca temporal;;18/12/2020 18:33:28;
+61;Nombre y apellidos;;Aurelio Gallardo Rodríguez;
+62;Nombre y apellidos;;Francisco Javier Pérez Cintado;
+63;Nombre y apellidos;;Silvia Prieto Paz;
+64;Nombre y apellidos;;Valentín Serrano;
+65;Nombre y apellidos;;Carmen María Padilla García;
+66;Nombre y apellidos;;Carmen Garrucho;
+67;Nombre y apellidos;;Javier Vázquez Indias;
+68;Nombre y apellidos;;Juana Serrano;
+69;Nombre y apellidos;;José Carlos Colorado Beato;
+70;Nombre y apellidos;;JOSE LUIS LARA AGUILAR;
+71;Nombre y apellidos;;María del Carmen Palomo Bernal;
+72;Nombre y apellidos;;Juan Francisco Carrasco Fernádez;
+73;Nombre y apellidos;;Fabiola Sánchez Cala;
+74;Nombre y apellidos;;Enrique Benítez Pozo;
+75;Nombre y apellidos;;Laura Morato González;
+76;Nombre y apellidos;;Juan Carlos Llera Arana;
+77;Nombre y apellidos;;María Aránega Jaime;
+78;Nombre y apellidos;;Juan Cobo Rodríguez;
+79;Nombre y apellidos;;Alberto Marín;
+80;Nombre y apellidos;;Avelino Morillo Ballesteros;
+81;Nombre y apellidos;;María Ángeles Peralta Timón;
+82;Nombre y apellidos;;Diego García Pérez;
+83;Nombre y apellidos;;María de los Santos Lozano Labrador;
+84;Nombre y apellidos;;Sonia Gallardo Morales;
+85;Nombre y apellidos;;Pedro Cardedal Rubio;
+86;Nombre y apellidos;;Ángel Araujo;
+87;Nombre y apellidos;;Cristina Plaza Jurado;
+88;Nombre y apellidos;;Ignacio Sánchez Aranda;
+89;Nombre y apellidos;;Simón Berges Torres;
+90;Nombre y apellidos;;María Isabel Rueda Rueda;
+91;Nombre y apellidos;;Agustín Celis Sánchez;
+92;Nombre y apellidos;;Pedro Zaya Ganfornina;
+93;Nombre y apellidos;;Jose Francisco Domínguez Partida;
+94;Nombre y apellidos;;Alberto Molina;
+95;Nombre y apellidos;;Alejandro Jiménez Camacho;
+96;Nombre y apellidos;;Manuel Bernal;
+97;Nombre y apellidos;;M Ángeles Galiano Torres;
+98;Nombre y apellidos;;Dolores Sarazá;
+99;Nombre y apellidos;;Javier García García;
+100;Nombre y apellidos;;Blanca Fernández Fernández;
+101;Nombre y apellidos;;Carmen Gavira Moreno;
+102;Nombre y apellidos;;Federico Miguel;
+103;Nombre y apellidos;;Esperanza Alcántara Bernal;
+104;Nombre y apellidos;;Lourdes;
+105;Nombre y apellidos;;Rocío Pérez Cruz;
+106;Nombre y apellidos;;Luis Carlos García Sánchez;
+107;Nombre y apellidos;;Alberto Pérez Cantero;
+108;Nombre y apellidos;;Yolanda Alcobas Garcia;
+109;Nombre y apellidos;;IVÁN MARÍN CASTAÑO;
+110;Nombre y apellidos;;Francisco j Acuña Ruiz;
+111;Nombre y apellidos;;Carmen Ruiz Álvarez;
+112;Nombre y apellidos;;Alicia Morales Gómez;
+113;Nombre y apellidos;;Dolores Pérez Román;
+114;Nombre y apellidos;;Eva Fernández Luque;
+115;Nombre y apellidos;;Juan Carlos González;
+116;Nombre y apellidos;;Simón Fernández Bandera;
+117;Nombre y apellidos;;Pilar Borrego Vázquez;
+118;Nombre y apellidos;;Federico Díaz Romero;
+119;Nombre y apellidos;;Guillermo Gonzalez Soto;
+120;Nombre y apellidos;;Estíbaliz López;
+121;Departamento;;Tecnología;Tecnología
+122;Departamento;;Matemáticas;Matemáticas
+123;Departamento;;Inglés;Inglés
+124;Departamento;;Geografía e Historia;Geografía e Historia
+125;Departamento;;Lengua;Lengua
+126;Departamento;;Francés;Francés
+127;Departamento;;Lengua;Francés
+128;Departamento;;Biología y Geología;Lengua
+129;Departamento;;Matemáticas;Biología y Geología
+130;Departamento;;Física y Química;Matemáticas
+131;Departamento;;Inglés;Física y Química
+132;Departamento;;Lengua;Física y Química
+133;Departamento;;Biología y Geología;Inglés
+134;Departamento;;Inglés;Lengua
+135;Departamento;;Francés;Biología y Geología
+136;Departamento;;Educación Física;Tecnología
+137;Departamento;;Inglés;Matemáticas
+138;Departamento;;Biología y Geología;Inglés
+139;Departamento;;Música;Geografía e Historia
+140;Departamento;;Inglés;Lengua
+141;Departamento;;Lengua;Francés
+142;Departamento;;Matemáticas;Francés
+143;Departamento;;Lengua;Lengua
+144;Departamento;;Geografía e Historia;Biología y Geología
+145;Departamento;;Matemáticas;Matemáticas
+146;Departamento;;Tecnología;Física y Química
+147;Departamento;;Matemáticas;Física y Química
+148;Departamento;;Geografía e Historia;Inglés
+149;Departamento;;Tecnología;Lengua
+150;Departamento;;Economía;Biología y Geología
+151;Departamento;;Lengua;Inglés
+152;Departamento;;Física y Química;Francés
+153;Departamento;;Matemáticas;Educación Física
+154;Departamento;;Educación Física;Inglés
+155;Departamento;;Educación Física;Biología y Geología
+156;Departamento;;Lengua;Música
+157;Departamento;;Biología y Geología;Inglés
+158;Departamento;;Filosofía;Lengua
+159;Departamento;;Educación plástica y visual;Matemáticas
+160;Departamento;;Matemáticas;Lengua
+161;Departamento;;Lengua;Lengua
+162;Departamento;;Geografía e Historia;Geografía e Historia
+163;Departamento;;Matemáticas;Matemáticas
+164;Departamento;;Inglés;Tecnología
+165;Departamento;;Lengua;Matemáticas
+166;Departamento;;Matemáticas;Geografía e Historia
+167;Departamento;;Educación Física;Tecnología
+168;Departamento;;Educación Física;Economía
+169;Departamento;;Geografía e Historia;Economía
+170;Departamento;;Inglés;Lengua
+171;Departamento;;Orientación;Física y Química
+172;Departamento;;Lengua;Matemáticas
+173;Departamento;;Física y Química;Educación Física
+174;Departamento;;Inglés;Educación Física
+175;Departamento;;Filosofía;Lengua
+176;Departamento;;Física y Química;Biología y Geología
+177;Departamento;;Orientación;Filosofía
+178;Departamento;;Matemáticas;Educación plástica y visual
+179;Departamento;;Geografía e Historia;Matemáticas
+180;Departamento;;Educación Física;Lengua
+181;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Ya he realizado formación.;Tecnología
+182;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Matemáticas
+183;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Inglés
+184;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Ya he realizado formación.;Geografía e Historia
+185;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Lengua
+186;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Ya he realizado formación.;Francés
+187;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Francés
+188;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Lengua
+189;Sobre la formación en Séneca ;Formación en Programaciones didácticas;No pienso participar por ahora.;Biología y Geología
+190;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Matemáticas
+191;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Ya he realizado formación.;Física y Química
+192;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Voy a participar en la formación en centros de este año;Física y Química
+193;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Inglés
+194;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Lengua
+195;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Ya he realizado formación.;Biología y Geología
+196;Sobre la formación en Séneca ;Formación en Programaciones didácticas;No pienso participar por ahora.;Inglés
+197;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Voy a participar en la formación en centros de este año;Francés
+198;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Educación Física
+199;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Inglés
+200;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Biología y Geología
+201;Sobre la formación en Séneca ;Formación en Programaciones didácticas;No pienso participar por ahora.;Música
+202;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Inglés
+203;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Voy a participar en la formación en centros de este año;Lengua
+204;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Matemáticas
+205;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Voy a participar en la formación en centros de este año;Lengua
+206;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Lengua
+207;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Voy a participar en la formación en centros de este año;Geografía e Historia
+208;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Ya he realizado formación.;Matemáticas
+209;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Voy a participar en la formación en centros de este año;Tecnología
+210;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Matemáticas
+211;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Geografía e Historia
+212;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Tecnología
+213;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Ya he realizado formación.;Economía
+214;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Voy a participar en la formación en centros de este año;Economía
+215;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Lengua
+216;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Física y Química
+217;Sobre la formación en Séneca ;Formación en Programaciones didácticas;No pienso participar por ahora.;Matemáticas
+218;Sobre la formación en Séneca ;Formación en Programaciones didácticas;No pienso participar por ahora.;Educación Física
+219;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Ya he realizado formación.;Educación Física
+220;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Ya he realizado formación.;Lengua
+221;Sobre la formación en Séneca ;Formación en Programaciones didácticas;No pienso participar por ahora.;Biología y Geología
+222;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Ya he realizado formación.;Filosofía
+223;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Ya he realizado formación.;Educación plástica y visual
+224;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Ya he realizado formación.;Matemáticas
+225;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Lengua
+226;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Ya he realizado formación.;Geografía e Historia
+227;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Matemáticas
+228;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Voy a participar en la formación en centros de este año;Inglés
+229;Sobre la formación en Séneca ;Formación en Programaciones didácticas;No pienso participar por ahora.;Lengua
+230;Sobre la formación en Séneca ;Formación en Programaciones didácticas;No pienso participar por ahora.;Matemáticas
+231;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Voy a participar en la formación en centros de este año;Educación Física
+232;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Educación Física
+233;Sobre la formación en Séneca ;Formación en Programaciones didácticas;No pienso participar por ahora.;Geografía e Historia
+234;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Ya he realizado formación.;Inglés
+235;Sobre la formación en Séneca ;Formación en Programaciones didácticas;No pienso participar por ahora.;Orientación
+236;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Lengua
+237;Sobre la formación en Séneca ;Formación en Programaciones didácticas;No pienso participar por ahora.;Física y Química
+238;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Inglés
+239;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Filosofía
+240;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Ya he realizado formación.;Física y Química
+241;Sobre la formación en Séneca ;Formación en Programaciones didácticas;No pienso participar por ahora.;Orientación
+242;Sobre la formación en Séneca ;Formación en Programaciones didácticas;No pienso participar por ahora.;Matemáticas
+243;Sobre la formación en Séneca ;Formación en Programaciones didácticas;No pienso participar por ahora.;Geografía e Historia
+244;Sobre la formación en Séneca ;Formación en Programaciones didácticas;Tengo previsto participar en el futuro.;Educación Física
+245;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Ya he realizado formación.;Tecnología
+246;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Voy a participar en la formación en centros de este año;Tecnología
+247;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Tengo previsto participar en el futuro.;Matemáticas
+248;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Tengo previsto participar en el futuro.;Inglés
+249;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;No pienso participar por ahora.;Geografía e Historia
+250;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Tengo previsto participar en el futuro.;Lengua
+251;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Voy a participar en la formación en centros de este año;Francés
+252;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Ya he realizado formación.;Lengua
+253;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Voy a participar en la formación en centros de este año;Lengua
+254;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Voy a participar en la formación en centros de este año;Biología y Geología
+255;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Ya he realizado formación.;Matemáticas
+256;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Ya he realizado formación.;Física y Química
+257;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Voy a participar en la formación en centros de este año;Física y Química
+258;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Tengo previsto participar en el futuro.;Inglés
+259;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Ya he realizado formación.;Lengua
+260;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Voy a participar en la formación en centros de este año;Biología y Geología
+261;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;No pienso participar por ahora.;Inglés
+262;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Voy a participar en la formación en centros de este año;Francés
+263;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Tengo previsto participar en el futuro.;Educación Física
+264;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Tengo previsto participar en el futuro.;Inglés
+265;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Tengo previsto participar en el futuro.;Biología y Geología
+266;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Voy a participar en la formación en centros de este año;Música
+267;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Tengo previsto participar en el futuro.;Inglés
+268;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Tengo previsto participar en el futuro.;Lengua
+269;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Voy a participar en la formación en centros de este año;Matemáticas
+270;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Voy a participar en la formación en centros de este año;Lengua
+271;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Voy a participar en la formación en centros de este año;Geografía e Historia
+272;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Voy a participar en la formación en centros de este año;Matemáticas
+273;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Ya he realizado formación.;Tecnología
+274;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Tengo previsto participar en el futuro.;Matemáticas
+275;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Voy a participar en la formación en centros de este año;Geografía e Historia
+276;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Tengo previsto participar en el futuro.;Tecnología
+277;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Voy a participar en la formación en centros de este año;Economía
+278;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Ya he realizado formación.;Lengua
+279;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Tengo previsto participar en el futuro.;Física y Química
+280;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;No pienso participar por ahora.;Matemáticas
+281;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;No pienso participar por ahora.;Educación Física
+282;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Voy a participar en la formación en centros de este año;Educación Física
+283;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Ya he realizado formación.;Lengua
+284;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;No pienso participar por ahora.;Biología y Geología
+285;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Tengo previsto participar en el futuro.;Filosofía
+286;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Ya he realizado formación.;Educación plástica y visual
+287;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Voy a participar en la formación en centros de este año;Educación plástica y visual
+288;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Tengo previsto participar en el futuro.;Matemáticas
+289;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Tengo previsto participar en el futuro.;Lengua
+290;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Tengo previsto participar en el futuro.;Geografía e Historia
+291;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Tengo previsto participar en el futuro.;Matemáticas
+292;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Voy a participar en la formación en centros de este año;Inglés
+293;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Tengo previsto participar en el futuro.;Lengua
+294;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;No pienso participar por ahora.;Matemáticas
+295;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Voy a participar en la formación en centros de este año;Educación Física
+296;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Tengo previsto participar en el futuro.;Educación Física
+297;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Tengo previsto participar en el futuro.;Geografía e Historia
+298;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;No pienso participar por ahora.;Inglés
+299;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;No pienso participar por ahora.;Orientación
+300;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Voy a participar en la formación en centros de este año;Lengua
+301;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;No pienso participar por ahora.;Física y Química
+302;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Voy a participar en la formación en centros de este año;Inglés
+303;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Tengo previsto participar en el futuro.;Inglés
+304;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Tengo previsto participar en el futuro.;Filosofía
+305;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Tengo previsto participar en el futuro.;Física y Química
+306;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;No pienso participar por ahora.;Orientación
+307;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;No pienso participar por ahora.;Matemáticas
+308;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;No pienso participar por ahora.;Geografía e Historia
+309;Sobre la formación en Séneca ;Formación en Cuaderno Séneca;Tengo previsto participar en el futuro.;Educación Física
+310;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Ya he realizado formación.;Tecnología
+311;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Tecnología
+312;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;No pienso participar por ahora.;Matemáticas
+313;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Ya he realizado formación.;Inglés
+314;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;No pienso participar por ahora.;Geografía e Historia
+315;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Lengua
+316;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Francés
+317;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Lengua
+318;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;No pienso participar por ahora.;Biología y Geología
+319;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Matemáticas
+320;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Ya he realizado formación.;Física y Química
+321;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Voy a participar en la formación en centros de este año;Física y Química
+322;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Inglés
+323;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Lengua
+324;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;No pienso participar por ahora.;Biología y Geología
+325;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;No pienso participar por ahora.;Inglés
+326;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Voy a participar en la formación en centros de este año;Francés
+327;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Educación Física
+328;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Inglés
+329;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Ya he realizado formación.;Biología y Geología
+330;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Biología y Geología
+331;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;No pienso participar por ahora.;Música
+332;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;No pienso participar por ahora.;Inglés
+333;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;No pienso participar por ahora.;Lengua
+334;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;No pienso participar por ahora.;Matemáticas
+335;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Voy a participar en la formación en centros de este año;Lengua
+336;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Voy a participar en la formación en centros de este año;Geografía e Historia
+337;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Matemáticas
+338;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Tecnología
+339;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Matemáticas
+340;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;No pienso participar por ahora.;Geografía e Historia
+341;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Tecnología
+342;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Voy a participar en la formación en centros de este año;Economía
+343;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;No pienso participar por ahora.;Lengua
+344;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Ya he realizado formación.;Física y Química
+345;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;No pienso participar por ahora.;Matemáticas
+346;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;No pienso participar por ahora.;Educación Física
+347;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Ya he realizado formación.;Educación Física
+348;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Ya he realizado formación.;Lengua
+349;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;No pienso participar por ahora.;Biología y Geología
+350;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Filosofía
+351;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Educación plástica y visual
+352;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Matemáticas
+353;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;No pienso participar por ahora.;Lengua
+354;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;No pienso participar por ahora.;Geografía e Historia
+355;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Matemáticas
+356;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Voy a participar en la formación en centros de este año;Inglés
+357;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;No pienso participar por ahora.;Lengua
+358;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;No pienso participar por ahora.;Matemáticas
+359;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Voy a participar en la formación en centros de este año;Educación Física
+360;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Educación Física
+361;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;No pienso participar por ahora.;Geografía e Historia
+362;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Inglés
+363;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;No pienso participar por ahora.;Orientación
+364;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Lengua
+365;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;No pienso participar por ahora.;Física y Química
+366;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Inglés
+367;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Filosofía
+368;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Física y Química
+369;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Orientación
+370;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;No pienso participar por ahora.;Matemáticas
+371;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;No pienso participar por ahora.;Geografía e Historia
+372;Sobre la formación en Séneca ;Formación en Unidades didácticas integradas;Tengo previsto participar en el futuro.;Educación Física
+373;¿Estás usando actualmente el cuaderno de Séneca?;;Sí.;Tecnología
+374;¿Estás usando actualmente el cuaderno de Séneca?;;No.;Matemáticas
+375;¿Estás usando actualmente el cuaderno de Séneca?;;No. Uso otros programas de registro como adittio, idoceo, etc.;Inglés
+376;¿Estás usando actualmente el cuaderno de Séneca?;;No.;Geografía e Historia
+377;¿Estás usando actualmente el cuaderno de Séneca?;;Sí.;Lengua
+378;¿Estás usando actualmente el cuaderno de Séneca?;;No. Uso otros programas de registro como adittio, idoceo, etc.;Francés
+379;¿Estás usando actualmente el cuaderno de Séneca?;;Sí.;Lengua
+380;¿Estás usando actualmente el cuaderno de Séneca?;;No. Uso otros programas de registro como adittio, idoceo, etc.;Biología y Geología
+381;¿Estás usando actualmente el cuaderno de Séneca?;;Sí.;Matemáticas
+382;¿Estás usando actualmente el cuaderno de Séneca?;;No, pero tengo intención de usarlo.;Física y Química
+383;¿Estás usando actualmente el cuaderno de Séneca?;;No. Uso otros programas de registro como adittio, idoceo, etc.;Inglés
+384;¿Estás usando actualmente el cuaderno de Séneca?;;Sí.;Lengua
+385;¿Estás usando actualmente el cuaderno de Séneca?;;No.;Biología y Geología
+386;¿Estás usando actualmente el cuaderno de Séneca?;;No. Uso otros programas de registro como adittio, idoceo, etc.;Inglés
+387;¿Estás usando actualmente el cuaderno de Séneca?;;No, pero tengo intención de usarlo.;Francés
+388;¿Estás usando actualmente el cuaderno de Séneca?;;No. Uso otros programas de registro como adittio, idoceo, etc.;Educación Física
+389;¿Estás usando actualmente el cuaderno de Séneca?;;No. Uso otros programas de registro como adittio, idoceo, etc.;Inglés
+390;¿Estás usando actualmente el cuaderno de Séneca?;;No. Uso otros programas de registro como adittio, idoceo, etc.;Biología y Geología
+391;¿Estás usando actualmente el cuaderno de Séneca?;;No, pero tengo intención de usarlo.;Música
+392;¿Estás usando actualmente el cuaderno de Séneca?;;No.;Inglés
+393;¿Estás usando actualmente el cuaderno de Séneca?;;No, pero tengo intención de usarlo.;Lengua
+394;¿Estás usando actualmente el cuaderno de Séneca?;;Sí.;Matemáticas
+395;¿Estás usando actualmente el cuaderno de Séneca?;;No, pero tengo intención de usarlo.;Lengua
+396;¿Estás usando actualmente el cuaderno de Séneca?;;No. Uso otros programas de registro como adittio, idoceo, etc.;Geografía e Historia
+397;¿Estás usando actualmente el cuaderno de Séneca?;;No.;Matemáticas
+398;¿Estás usando actualmente el cuaderno de Séneca?;;Sí.;Tecnología
+399;¿Estás usando actualmente el cuaderno de Séneca?;;No, pero tengo intención de usarlo.;Matemáticas
+400;¿Estás usando actualmente el cuaderno de Séneca?;;No.;Geografía e Historia
+401;¿Estás usando actualmente el cuaderno de Séneca?;;No. Uso otros programas de registro como adittio, idoceo, etc.;Tecnología
+402;¿Estás usando actualmente el cuaderno de Séneca?;;No, pero tengo intención de usarlo.;Economía
+403;¿Estás usando actualmente el cuaderno de Séneca?;;No. Uso otros programas de registro como adittio, idoceo, etc.;Lengua
+404;¿Estás usando actualmente el cuaderno de Séneca?;;No, pero tengo intención de usarlo.;Física y Química
+405;¿Estás usando actualmente el cuaderno de Séneca?;;No, pero tengo intención de usarlo.;Matemáticas
+406;¿Estás usando actualmente el cuaderno de Séneca?;;No. Uso otros programas de registro como adittio, idoceo, etc.;Educación Física
+407;¿Estás usando actualmente el cuaderno de Séneca?;;No.;Educación Física
+408;¿Estás usando actualmente el cuaderno de Séneca?;;No.;Lengua
+409;¿Estás usando actualmente el cuaderno de Séneca?;;No. Uso otros programas de registro como adittio, idoceo, etc.;Biología y Geología
+410;¿Estás usando actualmente el cuaderno de Séneca?;;No, pero tengo intención de usarlo.;Filosofía
+411;¿Estás usando actualmente el cuaderno de Séneca?;;Sí.;Educación plástica y visual
+412;¿Estás usando actualmente el cuaderno de Séneca?;;No. Uso otros programas de registro como adittio, idoceo, etc.;Matemáticas
+413;¿Estás usando actualmente el cuaderno de Séneca?;;No. Uso otros programas de registro como adittio, idoceo, etc.;Lengua
+414;¿Estás usando actualmente el cuaderno de Séneca?;;No, pero tengo intención de usarlo.;Geografía e Historia
+415;¿Estás usando actualmente el cuaderno de Séneca?;;No, pero tengo intención de usarlo.;Matemáticas
+416;¿Estás usando actualmente el cuaderno de Séneca?;;No, pero tengo intención de usarlo.;Inglés
+417;¿Estás usando actualmente el cuaderno de Séneca?;;No.;Lengua
+418;¿Estás usando actualmente el cuaderno de Séneca?;;No.;Matemáticas
+419;¿Estás usando actualmente el cuaderno de Séneca?;;No. Uso otros programas de registro como adittio, idoceo, etc.;Educación Física
+420;¿Estás usando actualmente el cuaderno de Séneca?;;No. Uso otros programas de registro como adittio, idoceo, etc.;Educación Física
+421;¿Estás usando actualmente el cuaderno de Séneca?;;No.;Geografía e Historia
+422;¿Estás usando actualmente el cuaderno de Séneca?;;No. Uso otros programas de registro como adittio, idoceo, etc.;Inglés
+423;¿Estás usando actualmente el cuaderno de Séneca?;;No.;Orientación
+424;¿Estás usando actualmente el cuaderno de Séneca?;;No, pero tengo intención de usarlo.;Lengua
+425;¿Estás usando actualmente el cuaderno de Séneca?;;No.;Física y Química
+426;¿Estás usando actualmente el cuaderno de Séneca?;;No. Uso otros programas de registro como adittio, idoceo, etc.;Inglés
+427;¿Estás usando actualmente el cuaderno de Séneca?;;No, pero tengo intención de usarlo.;Filosofía
+428;¿Estás usando actualmente el cuaderno de Séneca?;;No. Uso otros programas de registro como adittio, idoceo, etc.;Física y Química
+429;¿Estás usando actualmente el cuaderno de Séneca?;;No.;Orientación
+430;¿Estás usando actualmente el cuaderno de Séneca?;;No.;Matemáticas
+431;¿Estás usando actualmente el cuaderno de Séneca?;;No.;Geografía e Historia
+432;¿Estás usando actualmente el cuaderno de Séneca?;;No. Uso otros programas de registro como adittio, idoceo, etc.;Educación Física
+433;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Tecnología
+434;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Curso online de iniciación del CEP;Tecnología
+435;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Curso online de profundización del CEP;Tecnología
+436;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Tengo intención de participar en algún curso del CEP;Tecnología
+437;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Otros cursos impartidos por el CEP;Tecnología
+438;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Matemáticas
+439;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Curso online de iniciación del CEP;Inglés
+440;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Geografía e Historia
+441;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Otros;Geografía e Historia
+442;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Curso online de iniciación del CEP;Lengua
+443;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Francés
+444;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Curso online de iniciación del CEP;Francés
+445;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Lengua
+446;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Curso online de iniciación del CEP;Lengua
+447;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Biología y Geología
+448;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Curso online de iniciación del CEP;Biología y Geología
+449;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Curso online de profundización del CEP;Matemáticas
+450;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Física y Química
+451;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Curso online de iniciación del CEP;Física y Química
+452;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Otros;Física y Química
+453;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Inglés
+454;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Curso online de iniciación del CEP;Inglés
+455;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Curso online de profundización del CEP;Lengua
+456;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Biología y Geología
+457;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Tengo intención de participar en algún curso del CEP;Biología y Geología
+458;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Inglés
+459;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Francés
+460;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Tengo intención de participar en algún curso del CEP;Educación Física
+461;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Inglés
+462;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Biología y Geología
+463;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Curso online de iniciación del CEP;Biología y Geología
+464;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Música
+465;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Tengo intención de participar en algún curso del CEP;Inglés
+466;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Lengua
+467;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Matemáticas
+468;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Lengua
+469;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Curso online de iniciación del CEP;Lengua
+470;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Otros;Geografía e Historia
+471;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Curso online de iniciación del CEP;Matemáticas
+472;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Curso online de profundización del CEP;Matemáticas
+473;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Tecnología
+474;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Curso online de iniciación del CEP;Matemáticas
+475;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Geografía e Historia
+476;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Tengo intención de participar en algún curso del CEP;Geografía e Historia
+477;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Tecnología
+478;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Economía
+479;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Curso online de iniciación del CEP;Economía
+480;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Lengua
+481;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Curso online de profundización del CEP;Física y Química
+482;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Matemáticas
+483;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Educación Física
+484;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Educación Física
+485;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Curso online de iniciación del CEP;Educación Física
+486;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Lengua
+487;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Otros;Lengua
+488;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Biología y Geología
+489;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Filosofía
+490;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Curso online de iniciación del CEP;Filosofía
+491;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Educación plástica y visual
+492;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Matemáticas
+493;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Tengo intención de participar en algún curso del CEP;Lengua
+494;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Otros cursos impartidos por el CEP;Geografía e Historia
+495;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Matemáticas
+496;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Tengo intención de participar en algún curso del CEP;Matemáticas
+497;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Inglés
+498;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Lengua
+499;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Otros;Matemáticas
+500;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Educación Física
+501;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Otros cursos impartidos por el CEP;Educación Física
+502;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Educación Física
+503;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Geografía e Historia
+504;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Inglés
+505;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Orientación
+506;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Lengua
+507;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Otros;Física y Química
+508;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Inglés
+509;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Tengo intención de participar en algún curso del CEP;Inglés
+510;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Filosofía
+511;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Física y Química
+512;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Orientación
+513;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Otros;Matemáticas
+514;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Otros;Geografía e Historia
+515;Participación en la formación sobre Moodle Centros ;Formación en Moodle ;Formación inicial del IES Seritium curso 2020-2021;Educación Física
+516;Enseñanza no presencial. ;1 ESO A;Google Classroom;Matemáticas
+517;Enseñanza no presencial. ;1 ESO A;Google Classroom;Geografía e Historia
+518;Enseñanza no presencial. ;1 ESO A;Google Classroom;Lengua
+519;Enseñanza no presencial. ;1 ESO A;Google Classroom;Música
+520;Enseñanza no presencial. ;1 ESO A;Correos digitales;Música
+521;Enseñanza no presencial. ;1 ESO A;Google Classroom;Lengua
+522;Enseñanza no presencial. ;1 ESO A;Plataformas de editoriales;Lengua
+523;Enseñanza no presencial. ;1 ESO A;Google Classroom;Matemáticas
+524;Enseñanza no presencial. ;1 ESO A;Correos digitales;Matemáticas
+525;Enseñanza no presencial. ;1 ESO A;Google Classroom;Educación Física
+526;Enseñanza no presencial. ;1 ESO A;Google Classroom;Educación Física
+527;Enseñanza no presencial. ;1 ESO A;Google Classroom;Biología y Geología
+528;Enseñanza no presencial. ;1 ESO A;Moodle Centros;Educación plástica y visual
+529;Enseñanza no presencial. ;1 ESO A;Google Classroom;Educación plástica y visual
+530;Enseñanza no presencial. ;1 ESO A;Google Classroom;Inglés
+531;Enseñanza no presencial. ;1 ESO A;Correos digitales;Inglés
+532;Enseñanza no presencial. ;1 ESO A;Plataformas de editoriales;Inglés
+533;Enseñanza no presencial. ;1 ESO A;Moodle Centros;Orientación
+534;Enseñanza no presencial. ;1 ESO B;Google Classroom;Lengua
+535;Enseñanza no presencial. ;1 ESO B;Google Classroom;Francés
+536;Enseñanza no presencial. ;1 ESO B;Plataformas de editoriales;Francés
+537;Enseñanza no presencial. ;1 ESO B;Google Classroom;Inglés
+538;Enseñanza no presencial. ;1 ESO B;Correos digitales;Inglés
+539;Enseñanza no presencial. ;1 ESO B;Videoconferencia en directo;Inglés
+540;Enseñanza no presencial. ;1 ESO B;Google Classroom;Biología y Geología
+541;Enseñanza no presencial. ;1 ESO B;Correos digitales;Biología y Geología
+542;Enseñanza no presencial. ;1 ESO B;Google Classroom;Música
+543;Enseñanza no presencial. ;1 ESO B;Correos digitales;Música
+544;Enseñanza no presencial. ;1 ESO B;Google Classroom;Lengua
+545;Enseñanza no presencial. ;1 ESO B;Plataformas de editoriales;Lengua
+546;Enseñanza no presencial. ;1 ESO B;Google Classroom;Matemáticas
+547;Enseñanza no presencial. ;1 ESO B;Correos digitales;Matemáticas
+548;Enseñanza no presencial. ;1 ESO B;Moodle Centros;Geografía e Historia
+549;Enseñanza no presencial. ;1 ESO B;Correos digitales;Geografía e Historia
+550;Enseñanza no presencial. ;1 ESO B;Google Classroom;Educación Física
+551;Enseñanza no presencial. ;1 ESO B;Moodle Centros;Educación plástica y visual
+552;Enseñanza no presencial. ;1 ESO B;Google Classroom;Educación plástica y visual
+553;Enseñanza no presencial. ;1 ESO B;Google Classroom;Matemáticas
+554;Enseñanza no presencial. ;1 ESO B;Moodle Centros;Orientación
+555;Enseñanza no presencial. ;1 ESO C;Moodle Centros;Biología y Geología
+556;Enseñanza no presencial. ;1 ESO C;Correos digitales;Biología y Geología
+557;Enseñanza no presencial. ;1 ESO C;Google Classroom;Francés
+558;Enseñanza no presencial. ;1 ESO C;Google Classroom;Música
+559;Enseñanza no presencial. ;1 ESO C;Correos digitales;Música
+560;Enseñanza no presencial. ;1 ESO C;Moodle Centros;Geografía e Historia
+561;Enseñanza no presencial. ;1 ESO C;Correos digitales;Geografía e Historia
+562;Enseñanza no presencial. ;1 ESO C;Moodle Centros;Educación plástica y visual
+563;Enseñanza no presencial. ;1 ESO C;Google Classroom;Educación plástica y visual
+564;Enseñanza no presencial. ;1 ESO C;Google Classroom;Geografía e Historia
+565;Enseñanza no presencial. ;1 ESO C;Google Classroom;Lengua
+566;Enseñanza no presencial. ;1 ESO C;Google Classroom;Inglés
+567;Enseñanza no presencial. ;1 ESO C;Correos digitales;Inglés
+568;Enseñanza no presencial. ;1 ESO C;Plataformas de editoriales;Inglés
+569;Enseñanza no presencial. ;1 ESO C;Moodle Centros;Orientación
+570;Enseñanza no presencial. ;1 ESO C;Google Classroom;Matemáticas
+571;Enseñanza no presencial. ;1 ESO D;Google Classroom;Matemáticas
+572;Enseñanza no presencial. ;1 ESO D;Google Classroom;Francés
+573;Enseñanza no presencial. ;1 ESO D;Correos digitales;Francés
+574;Enseñanza no presencial. ;1 ESO D;Plataformas de editoriales;Francés
+575;Enseñanza no presencial. ;1 ESO D;Moodle Centros;Biología y Geología
+576;Enseñanza no presencial. ;1 ESO D;Correos digitales;Biología y Geología
+577;Enseñanza no presencial. ;1 ESO D;Google Classroom;Lengua
+578;Enseñanza no presencial. ;1 ESO D;Plataformas de editoriales;Lengua
+579;Enseñanza no presencial. ;1 ESO D;Google Classroom;Geografía e Historia
+580;Enseñanza no presencial. ;1 ESO D;Google Classroom;Educación Física
+581;Enseñanza no presencial. ;1 ESO D;Moodle Centros;Educación plástica y visual
+582;Enseñanza no presencial. ;1 ESO D;Google Classroom;Educación plástica y visual
+583;Enseñanza no presencial. ;1 ESO D;Google Classroom;Inglés
+584;Enseñanza no presencial. ;1 ESO D;Correos digitales;Inglés
+585;Enseñanza no presencial. ;1 ESO D;Plataformas de editoriales;Inglés
+586;Enseñanza no presencial. ;1 ESO D;Correos digitales;Orientación
+587;Enseñanza no presencial. ;1 ESO D;Moodle Centros;Orientación
+588;Enseñanza no presencial. ;1 ESO E;Google Classroom;Lengua
+589;Enseñanza no presencial. ;1 ESO E;Correos digitales;Lengua
+590;Enseñanza no presencial. ;1 ESO E;Google Classroom;Biología y Geología
+591;Enseñanza no presencial. ;1 ESO E;Correos digitales;Biología y Geología
+592;Enseñanza no presencial. ;1 ESO E;Google Classroom;Geografía e Historia
+593;Enseñanza no presencial. ;1 ESO E;Google Classroom;Educación Física
+594;Enseñanza no presencial. ;1 ESO E;Moodle Centros;Educación plástica y visual
+595;Enseñanza no presencial. ;1 ESO E;Google Classroom;Educación plástica y visual
+596;Enseñanza no presencial. ;1 ESO E;Google Classroom;Matemáticas
+597;Enseñanza no presencial. ;1 ESO E;Google Classroom;Inglés
+598;Enseñanza no presencial. ;1 ESO E;Correos digitales;Inglés
+599;Enseñanza no presencial. ;1 ESO E;Plataformas de editoriales;Inglés
+600;Enseñanza no presencial. ;1 ESO E;Google Classroom;Geografía e Historia
+601;Enseñanza no presencial. ;1 ESO E;Correos digitales;Orientación
+602;Enseñanza no presencial. ;1 ESO E;Moodle Centros;Orientación
+603;Enseñanza no presencial. ;2 ESO A;Google Classroom;Inglés
+604;Enseñanza no presencial. ;2 ESO A;Correos digitales;Inglés
+605;Enseñanza no presencial. ;2 ESO A;Google Classroom;Francés
+606;Enseñanza no presencial. ;2 ESO A;Correos digitales;Francés
+607;Enseñanza no presencial. ;2 ESO A;Google Classroom;Música
+608;Enseñanza no presencial. ;2 ESO A;Correos digitales;Música
+609;Enseñanza no presencial. ;2 ESO A;Google Classroom;Tecnología
+610;Enseñanza no presencial. ;2 ESO A;Correos digitales;Tecnología
+611;Enseñanza no presencial. ;2 ESO A;Plataformas de editoriales;Tecnología
+612;Enseñanza no presencial. ;2 ESO A;Google Classroom;Educación Física
+613;Enseñanza no presencial. ;2 ESO A;Google Classroom;Lengua
+614;Enseñanza no presencial. ;2 ESO A;Correos digitales;Lengua
+615;Enseñanza no presencial. ;2 ESO A;Moodle Centros;Educación plástica y visual
+616;Enseñanza no presencial. ;2 ESO A;Google Classroom;Educación plástica y visual
+617;Enseñanza no presencial. ;2 ESO A;Google Classroom;Matemáticas
+618;Enseñanza no presencial. ;2 ESO A;Moodle Centros;Orientación
+619;Enseñanza no presencial. ;2 ESO A;Moodle Centros;Geografía e Historia
+620;Enseñanza no presencial. ;2 ESO B;Moodle Centros;Física y Química
+621;Enseñanza no presencial. ;2 ESO B;Google Classroom;Física y Química
+622;Enseñanza no presencial. ;2 ESO B;Correos digitales;Física y Química
+623;Enseñanza no presencial. ;2 ESO B;Videoconferencia en directo;Física y Química
+624;Enseñanza no presencial. ;2 ESO B;Google Classroom;Educación Física
+625;Enseñanza no presencial. ;2 ESO B;Google Classroom;Música
+626;Enseñanza no presencial. ;2 ESO B;Correos digitales;Música
+627;Enseñanza no presencial. ;2 ESO B;Moodle Centros;Matemáticas
+628;Enseñanza no presencial. ;2 ESO B;Correos digitales;Matemáticas
+629;Enseñanza no presencial. ;2 ESO B;Google Classroom;Tecnología
+630;Enseñanza no presencial. ;2 ESO B;Correos digitales;Tecnología
+631;Enseñanza no presencial. ;2 ESO B;Plataformas de editoriales;Tecnología
+632;Enseñanza no presencial. ;2 ESO B;Google Classroom;Lengua
+633;Enseñanza no presencial. ;2 ESO B;Plataformas de editoriales;Lengua
+634;Enseñanza no presencial. ;2 ESO B;Moodle Centros;Educación plástica y visual
+635;Enseñanza no presencial. ;2 ESO B;Google Classroom;Educación plástica y visual
+636;Enseñanza no presencial. ;2 ESO B;Google Classroom;Inglés
+637;Enseñanza no presencial. ;2 ESO B;Correos digitales;Inglés
+638;Enseñanza no presencial. ;2 ESO B;Plataformas de editoriales;Inglés
+639;Enseñanza no presencial. ;2 ESO B;Moodle Centros;Orientación
+640;Enseñanza no presencial. ;2 ESO B;Moodle Centros;Geografía e Historia
+641;Enseñanza no presencial. ;2 ESO C;Google Classroom;Lengua
+642;Enseñanza no presencial. ;2 ESO C;Google Classroom;Francés
+643;Enseñanza no presencial. ;2 ESO C;Correos digitales;Francés
+644;Enseñanza no presencial. ;2 ESO C;Google Classroom;Educación Física
+645;Enseñanza no presencial. ;2 ESO C;Google Classroom;Música
+646;Enseñanza no presencial. ;2 ESO C;Correos digitales;Música
+647;Enseñanza no presencial. ;2 ESO C;Correos digitales;Matemáticas
+648;Enseñanza no presencial. ;2 ESO C;Google Classroom;Tecnología
+649;Enseñanza no presencial. ;2 ESO C;Google Classroom;Lengua
+650;Enseñanza no presencial. ;2 ESO C;Correos digitales;Lengua
+651;Enseñanza no presencial. ;2 ESO C;Moodle Centros;Geografía e Historia
+652;Enseñanza no presencial. ;2 ESO C;Google Classroom;Lengua
+653;Enseñanza no presencial. ;2 ESO C;Correos digitales;Orientación
+654;Enseñanza no presencial. ;2 ESO C;Google Classroom;Inglés
+655;Enseñanza no presencial. ;2 ESO C;Correos digitales;Inglés
+656;Enseñanza no presencial. ;2 ESO C;Plataformas de editoriales;Inglés
+657;Enseñanza no presencial. ;2 ESO C;Moodle Centros;Orientación
+658;Enseñanza no presencial. ;2 ESO D;Moodle Centros;Inglés
+659;Enseñanza no presencial. ;2 ESO D;Google Classroom;Lengua
+660;Enseñanza no presencial. ;2 ESO D;Moodle Centros;Física y Química
+661;Enseñanza no presencial. ;2 ESO D;Google Classroom;Física y Química
+662;Enseñanza no presencial. ;2 ESO D;Correos digitales;Física y Química
+663;Enseñanza no presencial. ;2 ESO D;Videoconferencia en directo;Física y Química
+664;Enseñanza no presencial. ;2 ESO D;Google Classroom;Educación Física
+665;Enseñanza no presencial. ;2 ESO D;Google Classroom;Música
+666;Enseñanza no presencial. ;2 ESO D;Correos digitales;Música
+667;Enseñanza no presencial. ;2 ESO D;Correos digitales;Matemáticas
+668;Enseñanza no presencial. ;2 ESO D;Google Classroom;Tecnología
+669;Enseñanza no presencial. ;2 ESO D;Google Classroom;Educación Física
+670;Enseñanza no presencial. ;2 ESO D;Moodle Centros;Geografía e Historia
+671;Enseñanza no presencial. ;2 ESO D;Google Classroom;Lengua
+672;Enseñanza no presencial. ;2 ESO D;Moodle Centros;Orientación
+673;Enseñanza no presencial. ;2 ESO E;Moodle Centros;Inglés
+674;Enseñanza no presencial. ;2 ESO E;Videoconferencia en directo;Inglés
+675;Enseñanza no presencial. ;2 ESO E;Moodle Centros;Física y Química
+676;Enseñanza no presencial. ;2 ESO E;Google Classroom;Física y Química
+677;Enseñanza no presencial. ;2 ESO E;Correos digitales;Física y Química
+678;Enseñanza no presencial. ;2 ESO E;Videoconferencia en directo;Física y Química
+679;Enseñanza no presencial. ;2 ESO E;Google Classroom;Música
+680;Enseñanza no presencial. ;2 ESO E;Correos digitales;Música
+681;Enseñanza no presencial. ;2 ESO E;Google Classroom;Geografía e Historia
+682;Enseñanza no presencial. ;2 ESO E;Correos digitales;Geografía e Historia
+683;Enseñanza no presencial. ;2 ESO E;Moodle Centros;Matemáticas
+684;Enseñanza no presencial. ;2 ESO E;Correos digitales;Matemáticas
+685;Enseñanza no presencial. ;2 ESO E;Google Classroom;Tecnología
+686;Enseñanza no presencial. ;2 ESO E;Correos digitales;Tecnología
+687;Enseñanza no presencial. ;2 ESO E;Plataformas de editoriales;Tecnología
+688;Enseñanza no presencial. ;2 ESO E;Google Classroom;Lengua
+689;Enseñanza no presencial. ;2 ESO E;Plataformas de editoriales;Lengua
+690;Enseñanza no presencial. ;2 ESO E;Moodle Centros;Física y Química
+691;Enseñanza no presencial. ;2 ESO E;Google Classroom;Física y Química
+692;Enseñanza no presencial. ;2 ESO E;Correos digitales;Física y Química
+693;Enseñanza no presencial. ;2 ESO E;Moodle Centros;Educación plástica y visual
+694;Enseñanza no presencial. ;2 ESO E;Google Classroom;Educación plástica y visual
+695;Enseñanza no presencial. ;2 ESO E;Google Classroom;Geografía e Historia
+696;Enseñanza no presencial. ;2 ESO E;Correos digitales;Orientación
+697;Enseñanza no presencial. ;2 ESO E;Google Classroom;Física y Química
+698;Enseñanza no presencial. ;2 ESO E;Correos digitales;Física y Química
+699;Enseñanza no presencial. ;2 ESO E;Moodle Centros;Orientación
+700;Enseñanza no presencial. ;3 ESO A;Google Classroom;Matemáticas
+701;Enseñanza no presencial. ;3 ESO A;Google Classroom;Francés
+702;Enseñanza no presencial. ;3 ESO A;Plataformas de editoriales;Francés
+703;Enseñanza no presencial. ;3 ESO A;Google Classroom;Biología y Geología
+704;Enseñanza no presencial. ;3 ESO A;Correos digitales;Biología y Geología
+705;Enseñanza no presencial. ;3 ESO A;Plataformas de editoriales;Biología y Geología
+706;Enseñanza no presencial. ;3 ESO A;Google Classroom;Tecnología
+707;Enseñanza no presencial. ;3 ESO A;Moodle Centros;Física y Química
+708;Enseñanza no presencial. ;3 ESO A;Correos digitales;Física y Química
+709;Enseñanza no presencial. ;3 ESO A;Plataformas de editoriales;Física y Química
+710;Enseñanza no presencial. ;3 ESO A;Moodle Centros;Orientación
+711;Enseñanza no presencial. ;3 ESO A;Moodle Centros;Geografía e Historia
+712;Enseñanza no presencial. ;3 ESO B;Google Classroom;Francés
+713;Enseñanza no presencial. ;3 ESO B;Plataformas de editoriales;Francés
+714;Enseñanza no presencial. ;3 ESO B;Moodle Centros;Lengua
+715;Enseñanza no presencial. ;3 ESO B;Correos digitales;Lengua
+716;Enseñanza no presencial. ;3 ESO B;Google Classroom;Biología y Geología
+717;Enseñanza no presencial. ;3 ESO B;Correos digitales;Biología y Geología
+718;Enseñanza no presencial. ;3 ESO B;Plataformas de editoriales;Biología y Geología
+719;Enseñanza no presencial. ;3 ESO B;Google Classroom;Lengua
+720;Enseñanza no presencial. ;3 ESO B;Plataformas de editoriales;Lengua
+721;Enseñanza no presencial. ;3 ESO B;Moodle Centros;Matemáticas
+722;Enseñanza no presencial. ;3 ESO B;Correos digitales;Matemáticas
+723;Enseñanza no presencial. ;3 ESO B;Moodle Centros;Geografía e Historia
+724;Enseñanza no presencial. ;3 ESO B;Correos digitales;Geografía e Historia
+725;Enseñanza no presencial. ;3 ESO B;Google Classroom;Tecnología
+726;Enseñanza no presencial. ;3 ESO B;Google Classroom;Inglés
+727;Enseñanza no presencial. ;3 ESO B;Plataformas de editoriales;Inglés
+728;Enseñanza no presencial. ;3 ESO B;Moodle Centros;Física y Química
+729;Enseñanza no presencial. ;3 ESO B;Correos digitales;Física y Química
+730;Enseñanza no presencial. ;3 ESO B;Plataformas de editoriales;Física y Química
+731;Enseñanza no presencial. ;3 ESO B;Moodle Centros;Orientación
+732;Enseñanza no presencial. ;3 ESO C;Google Classroom;Francés
+733;Enseñanza no presencial. ;3 ESO C;Plataformas de editoriales;Francés
+734;Enseñanza no presencial. ;3 ESO C;Moodle Centros;Lengua
+735;Enseñanza no presencial. ;3 ESO C;Correos digitales;Lengua
+736;Enseñanza no presencial. ;3 ESO C;Moodle Centros;Biología y Geología
+737;Enseñanza no presencial. ;3 ESO C;Correos digitales;Biología y Geología
+738;Enseñanza no presencial. ;3 ESO C;Google Classroom;Inglés
+739;Enseñanza no presencial. ;3 ESO C;Correos digitales;Inglés
+740;Enseñanza no presencial. ;3 ESO C;Plataformas de editoriales;Inglés
+741;Enseñanza no presencial. ;3 ESO C;Google Classroom;Tecnología
+742;Enseñanza no presencial. ;3 ESO C;Correos digitales;Tecnología
+743;Enseñanza no presencial. ;3 ESO C;Google Classroom;Educación Física
+744;Enseñanza no presencial. ;3 ESO C;Correos digitales;Educación Física
+745;Enseñanza no presencial. ;3 ESO C;Moodle Centros;Física y Química
+746;Enseñanza no presencial. ;3 ESO C;Correos digitales;Física y Química
+747;Enseñanza no presencial. ;3 ESO C;Plataformas de editoriales;Física y Química
+748;Enseñanza no presencial. ;3 ESO C;Moodle Centros;Orientación
+749;Enseñanza no presencial. ;3 ESO C;Google Classroom;Matemáticas
+750;Enseñanza no presencial. ;3 ESO D;Google Classroom;Francés
+751;Enseñanza no presencial. ;3 ESO D;Plataformas de editoriales;Francés
+752;Enseñanza no presencial. ;3 ESO D;Moodle Centros;Biología y Geología
+753;Enseñanza no presencial. ;3 ESO D;Correos digitales;Biología y Geología
+754;Enseñanza no presencial. ;3 ESO D;Google Classroom;Inglés
+755;Enseñanza no presencial. ;3 ESO D;Correos digitales;Inglés
+756;Enseñanza no presencial. ;3 ESO D;Google Classroom;Tecnología
+757;Enseñanza no presencial. ;3 ESO D;Correos digitales;Tecnología
+758;Enseñanza no presencial. ;3 ESO D;Google Classroom;Lengua
+759;Enseñanza no presencial. ;3 ESO D;Plataformas de editoriales;Lengua
+760;Enseñanza no presencial. ;3 ESO D;Correos digitales;Inglés
+761;Enseñanza no presencial. ;3 ESO D;Videoconferencia en directo;Inglés
+762;Enseñanza no presencial. ;3 ESO D;Plataformas de editoriales;Inglés
+763;Enseñanza no presencial. ;3 ESO D;Google Classroom;Matemáticas
+764;Enseñanza no presencial. ;3 ESO D;Google Classroom;Educación Física
+765;Enseñanza no presencial. ;3 ESO D;Correos digitales;Educación Física
+766;Enseñanza no presencial. ;3 ESO D;Moodle Centros;Física y Química
+767;Enseñanza no presencial. ;3 ESO D;Correos digitales;Física y Química
+768;Enseñanza no presencial. ;3 ESO D;Plataformas de editoriales;Física y Química
+769;Enseñanza no presencial. ;3 ESO D;Moodle Centros;Orientación
+770;Enseñanza no presencial. ;3 ESO D;Google Classroom;Matemáticas
+771;Enseñanza no presencial. ;3 ESO E;Moodle Centros;Inglés
+772;Enseñanza no presencial. ;3 ESO E;Correos digitales;Inglés
+773;Enseñanza no presencial. ;3 ESO E;Google Classroom;Geografía e Historia
+774;Enseñanza no presencial. ;3 ESO E;Google Classroom;Francés
+775;Enseñanza no presencial. ;3 ESO E;Plataformas de editoriales;Francés
+776;Enseñanza no presencial. ;3 ESO E;Google Classroom;Biología y Geología
+777;Enseñanza no presencial. ;3 ESO E;Correos digitales;Biología y Geología
+778;Enseñanza no presencial. ;3 ESO E;Plataformas de editoriales;Biología y Geología
+779;Enseñanza no presencial. ;3 ESO E;Google Classroom;Lengua
+780;Enseñanza no presencial. ;3 ESO E;Plataformas de editoriales;Lengua
+781;Enseñanza no presencial. ;3 ESO E;Google Classroom;Tecnología
+782;Enseñanza no presencial. ;3 ESO E;Correos digitales;Tecnología
+783;Enseñanza no presencial. ;3 ESO E;Google Classroom;Tecnología
+784;Enseñanza no presencial. ;3 ESO E;Google Classroom;Biología y Geología
+785;Enseñanza no presencial. ;3 ESO E;Google Classroom;Educación Física
+786;Enseñanza no presencial. ;3 ESO E;Correos digitales;Educación Física
+787;Enseñanza no presencial. ;3 ESO E;Correos digitales;Orientación
+788;Enseñanza no presencial. ;3 ESO E;Moodle Centros;Orientación
+789;Enseñanza no presencial. ;3 ESO E;Google Classroom;Matemáticas
+790;Enseñanza no presencial. ;4 ESO A;Moodle Centros;Lengua
+791;Enseñanza no presencial. ;4 ESO A;Correos digitales;Lengua
+792;Enseñanza no presencial. ;4 ESO A;Google Classroom;Inglés
+793;Enseñanza no presencial. ;4 ESO A;Correos digitales;Inglés
+794;Enseñanza no presencial. ;4 ESO A;Moodle Centros;Lengua
+795;Enseñanza no presencial. ;4 ESO A;Correos digitales;Lengua
+796;Enseñanza no presencial. ;4 ESO A;Moodle Centros;Biología y Geología
+797;Enseñanza no presencial. ;4 ESO A;Correos digitales;Biología y Geología
+798;Enseñanza no presencial. ;4 ESO A;Videoconferencia en directo;Biología y Geología
+799;Enseñanza no presencial. ;4 ESO A;Google Classroom;Francés
+800;Enseñanza no presencial. ;4 ESO A;Correos digitales;Francés
+801;Enseñanza no presencial. ;4 ESO A;Videoconferencia en directo;Francés
+802;Enseñanza no presencial. ;4 ESO A;Google Classroom;Educación Física
+803;Enseñanza no presencial. ;4 ESO A;Moodle Centros;Geografía e Historia
+804;Enseñanza no presencial. ;4 ESO A;Google Classroom;Física y Química
+805;Enseñanza no presencial. ;4 ESO A;Correos digitales;Física y Química
+806;Enseñanza no presencial. ;4 ESO A;Moodle Centros;Orientación
+807;Enseñanza no presencial. ;4 ESO B;Google Classroom;Geografía e Historia
+808;Enseñanza no presencial. ;4 ESO B;Google Classroom;Inglés
+809;Enseñanza no presencial. ;4 ESO B;Correos digitales;Inglés
+810;Enseñanza no presencial. ;4 ESO B;Google Classroom;Inglés
+811;Enseñanza no presencial. ;4 ESO B;Correos digitales;Inglés
+812;Enseñanza no presencial. ;4 ESO B;Plataformas de editoriales;Inglés
+813;Enseñanza no presencial. ;4 ESO B;Google Classroom;Francés
+814;Enseñanza no presencial. ;4 ESO B;Correos digitales;Francés
+815;Enseñanza no presencial. ;4 ESO B;Videoconferencia en directo;Francés
+816;Enseñanza no presencial. ;4 ESO B;Google Classroom;Tecnología
+817;Enseñanza no presencial. ;4 ESO B;Google Classroom;Educación Física
+818;Enseñanza no presencial. ;4 ESO B;Google Classroom;Biología y Geología
+819;Enseñanza no presencial. ;4 ESO B;Videoconferencia en directo;Biología y Geología
+820;Enseñanza no presencial. ;4 ESO B;Google Classroom;Matemáticas
+821;Enseñanza no presencial. ;4 ESO B;Videoconferencia en directo;Matemáticas
+822;Enseñanza no presencial. ;4 ESO B;Google Classroom;Lengua
+823;Enseñanza no presencial. ;4 ESO B;Moodle Centros;Orientación
+824;Enseñanza no presencial. ;4 ESO C;Moodle Centros;Matemáticas
+825;Enseñanza no presencial. ;4 ESO C;Google Classroom;Inglés
+826;Enseñanza no presencial. ;4 ESO C;Correos digitales;Inglés
+827;Enseñanza no presencial. ;4 ESO C;Moodle Centros;Lengua
+828;Enseñanza no presencial. ;4 ESO C;Correos digitales;Lengua
+829;Enseñanza no presencial. ;4 ESO C;Google Classroom;Francés
+830;Enseñanza no presencial. ;4 ESO C;Correos digitales;Francés
+831;Enseñanza no presencial. ;4 ESO C;Videoconferencia en directo;Francés
+832;Enseñanza no presencial. ;4 ESO C;Google Classroom;Filosofía
+833;Enseñanza no presencial. ;4 ESO C;Correos digitales;Filosofía
+834;Enseñanza no presencial. ;4 ESO C;Google Classroom;Geografía e Historia
+835;Enseñanza no presencial. ;4 ESO C;Moodle Centros;Orientación
+836;Enseñanza no presencial. ;4 ESO D;Google Classroom;Geografía e Historia
+837;Enseñanza no presencial. ;4 ESO D;Google Classroom;Inglés
+838;Enseñanza no presencial. ;4 ESO D;Correos digitales;Inglés
+839;Enseñanza no presencial. ;4 ESO D;Google Classroom;Inglés
+840;Enseñanza no presencial. ;4 ESO D;Correos digitales;Inglés
+841;Enseñanza no presencial. ;4 ESO D;Plataformas de editoriales;Inglés
+842;Enseñanza no presencial. ;4 ESO D;Google Classroom;Francés
+843;Enseñanza no presencial. ;4 ESO D;Correos digitales;Francés
+844;Enseñanza no presencial. ;4 ESO D;Videoconferencia en directo;Francés
+845;Enseñanza no presencial. ;4 ESO D;Google Classroom;Lengua
+846;Enseñanza no presencial. ;4 ESO D;Google Classroom;Geografía e Historia
+847;Enseñanza no presencial. ;4 ESO D;Correos digitales;Geografía e Historia
+848;Enseñanza no presencial. ;4 ESO D;Google Classroom;Tecnología
+849;Enseñanza no presencial. ;4 ESO D;Google Classroom;Educación Física
+850;Enseñanza no presencial. ;4 ESO D;Google Classroom;Filosofía
+851;Enseñanza no presencial. ;4 ESO D;Correos digitales;Filosofía
+852;Enseñanza no presencial. ;4 ESO D;Google Classroom;Matemáticas
+853;Enseñanza no presencial. ;4 ESO D;Videoconferencia en directo;Matemáticas
+854;Enseñanza no presencial. ;4 ESO D;Google Classroom;Lengua
+855;Enseñanza no presencial. ;4 ESO D;Moodle Centros;Orientación
+856;Enseñanza no presencial. ;4 ESO E;Moodle Centros;Tecnología
+857;Enseñanza no presencial. ;4 ESO E;Correos digitales;Tecnología
+858;Enseñanza no presencial. ;4 ESO E;Moodle Centros;Matemáticas
+859;Enseñanza no presencial. ;4 ESO E;Moodle Centros;Física y Química
+860;Enseñanza no presencial. ;4 ESO E;Google Classroom;Física y Química
+861;Enseñanza no presencial. ;4 ESO E;Correos digitales;Física y Química
+862;Enseñanza no presencial. ;4 ESO E;Videoconferencia en directo;Física y Química
+863;Enseñanza no presencial. ;4 ESO E;Google Classroom;Inglés
+864;Enseñanza no presencial. ;4 ESO E;Correos digitales;Inglés
+865;Enseñanza no presencial. ;4 ESO E;Google Classroom;Geografía e Historia
+866;Enseñanza no presencial. ;4 ESO E;Correos digitales;Geografía e Historia
+867;Enseñanza no presencial. ;4 ESO E;Google Classroom;Economía
+868;Enseñanza no presencial. ;4 ESO E;Correos digitales;Economía
+869;Enseñanza no presencial. ;4 ESO E;Moodle Centros;Física y Química
+870;Enseñanza no presencial. ;4 ESO E;Correos digitales;Física y Química
+871;Enseñanza no presencial. ;4 ESO E;Google Classroom;Educación Física
+872;Enseñanza no presencial. ;4 ESO E;Correos digitales;Orientación
+873;Enseñanza no presencial. ;4 ESO E;Google Classroom;Lengua
+874;Enseñanza no presencial. ;4 ESO E;Moodle Centros;Orientación
+875;Enseñanza no presencial. ;1 BAC A;Google Classroom;Francés
+876;Enseñanza no presencial. ;1 BAC A;Google Classroom;Francés
+877;Enseñanza no presencial. ;1 BAC A;Correos digitales;Francés
+878;Enseñanza no presencial. ;1 BAC A;Videoconferencia en directo;Francés
+879;Enseñanza no presencial. ;1 BAC A;Moodle Centros;Matemáticas
+880;Enseñanza no presencial. ;1 BAC A;Correos digitales;Matemáticas
+881;Enseñanza no presencial. ;1 BAC A;Google Classroom;Economía
+882;Enseñanza no presencial. ;1 BAC A;Correos digitales;Economía
+883;Enseñanza no presencial. ;1 BAC A;Google Classroom;Filosofía
+884;Enseñanza no presencial. ;1 BAC A;Correos digitales;Filosofía
+885;Enseñanza no presencial. ;1 BAC A;Moodle Centros;Inglés
+886;Enseñanza no presencial. ;1 BAC A;Google Classroom;Inglés
+887;Enseñanza no presencial. ;1 BAC A;Correos digitales;Inglés
+888;Enseñanza no presencial. ;1 BAC A;Videoconferencia en directo;Inglés
+889;Enseñanza no presencial. ;1 BAC A;Google Classroom;Educación Física
+890;Enseñanza no presencial. ;1 BAC A;Correos digitales;Educación Física
+891;Enseñanza no presencial. ;1 BAC A;Google Classroom;Geografía e Historia
+892;Enseñanza no presencial. ;1 BAC A;Google Classroom;Lengua
+893;Enseñanza no presencial. ;1 BAC A;Google Classroom;Geografía e Historia
+894;Enseñanza no presencial. ;1 BAC B;Moodle Centros;Inglés
+895;Enseñanza no presencial. ;1 BAC B;Correos digitales;Inglés
+896;Enseñanza no presencial. ;1 BAC B;Google Classroom;Francés
+897;Enseñanza no presencial. ;1 BAC B;Moodle Centros;Lengua
+898;Enseñanza no presencial. ;1 BAC B;Correos digitales;Lengua
+899;Enseñanza no presencial. ;1 BAC B;Google Classroom;Francés
+900;Enseñanza no presencial. ;1 BAC B;Correos digitales;Francés
+901;Enseñanza no presencial. ;1 BAC B;Videoconferencia en directo;Francés
+902;Enseñanza no presencial. ;1 BAC B;Google Classroom;Economía
+903;Enseñanza no presencial. ;1 BAC B;Correos digitales;Economía
+904;Enseñanza no presencial. ;1 BAC B;Google Classroom;Geografía e Historia
+905;Enseñanza no presencial. ;1 BAC B;Moodle Centros;Filosofía
+906;Enseñanza no presencial. ;1 BAC B;Correos digitales;Filosofía
+907;Enseñanza no presencial. ;1 BAC B;Google Classroom;Matemáticas
+908;Enseñanza no presencial. ;1 BAC B;Google Classroom;Geografía e Historia
+909;Enseñanza no presencial. ;1 BAC B;Google Classroom;Educación Física
+910;Enseñanza no presencial. ;1 BAC C;Google Classroom;Matemáticas
+911;Enseñanza no presencial. ;1 BAC C;Google Classroom;Francés
+912;Enseñanza no presencial. ;1 BAC C;Moodle Centros;Lengua
+913;Enseñanza no presencial. ;1 BAC C;Correos digitales;Lengua
+914;Enseñanza no presencial. ;1 BAC C;Google Classroom;Francés
+915;Enseñanza no presencial. ;1 BAC C;Correos digitales;Francés
+916;Enseñanza no presencial. ;1 BAC C;Videoconferencia en directo;Francés
+917;Enseñanza no presencial. ;1 BAC C;Google Classroom;Biología y Geología
+918;Enseñanza no presencial. ;1 BAC C;Correos digitales;Biología y Geología
+919;Enseñanza no presencial. ;1 BAC C;Google Classroom;Inglés
+920;Enseñanza no presencial. ;1 BAC C;Correos digitales;Inglés
+921;Enseñanza no presencial. ;1 BAC C;Google Classroom;Biología y Geología
+922;Enseñanza no presencial. ;1 BAC C;Videoconferencia en directo;Biología y Geología
+923;Enseñanza no presencial. ;1 BAC C;Google Classroom;Filosofía
+924;Enseñanza no presencial. ;1 BAC C;Correos digitales;Filosofía
+925;Enseñanza no presencial. ;1 BAC C;Google Classroom;Educación Física
+926;Enseñanza no presencial. ;1 BAC C;Correos digitales;Educación Física
+927;Enseñanza no presencial. ;1 BAC C;Moodle Centros;Física y Química
+928;Enseñanza no presencial. ;1 BAC C;Correos digitales;Física y Química
+929;Enseñanza no presencial. ;1 BAC C;Plataformas de editoriales;Física y Química
+930;Enseñanza no presencial. ;1 BAC D;Moodle Centros;Tecnología
+931;Enseñanza no presencial. ;1 BAC D;Correos digitales;Tecnología
+932;Enseñanza no presencial. ;1 BAC D;Google Classroom;Francés
+933;Enseñanza no presencial. ;1 BAC D;Google Classroom;Francés
+934;Enseñanza no presencial. ;1 BAC D;Correos digitales;Francés
+935;Enseñanza no presencial. ;1 BAC D;Videoconferencia en directo;Francés
+936;Enseñanza no presencial. ;1 BAC D;Google Classroom;Biología y Geología
+937;Enseñanza no presencial. ;1 BAC D;Correos digitales;Biología y Geología
+938;Enseñanza no presencial. ;1 BAC D;Moodle Centros;Matemáticas
+939;Enseñanza no presencial. ;1 BAC D;Correos digitales;Matemáticas
+940;Enseñanza no presencial. ;1 BAC D;Videoconferencia en directo;Matemáticas
+941;Enseñanza no presencial. ;1 BAC D;Google Classroom;Biología y Geología
+942;Enseñanza no presencial. ;1 BAC D;Videoconferencia en directo;Biología y Geología
+943;Enseñanza no presencial. ;1 BAC D;Google Classroom;Lengua
+944;Enseñanza no presencial. ;1 BAC D;Google Classroom;Física y Química
+945;Enseñanza no presencial. ;1 BAC D;Correos digitales;Física y Química
+946;Enseñanza no presencial. ;1 BAC D;Moodle Centros;Filosofía
+947;Enseñanza no presencial. ;1 BAC D;Correos digitales;Filosofía
+948;Enseñanza no presencial. ;1 BAC D;Google Classroom;Educación Física
+949;Enseñanza no presencial. ;2 BAC A;Moodle Centros;Tecnología
+950;Enseñanza no presencial. ;2 BAC A;Correos digitales;Tecnología
+951;Enseñanza no presencial. ;2 BAC A;Moodle Centros;Inglés
+952;Enseñanza no presencial. ;2 BAC A;Correos digitales;Inglés
+953;Enseñanza no presencial. ;2 BAC A;Google Classroom;Geografía e Historia
+954;Enseñanza no presencial. ;2 BAC A;Moodle Centros;Geografía e Historia
+955;Enseñanza no presencial. ;2 BAC A;Correos digitales;Geografía e Historia
+956;Enseñanza no presencial. ;2 BAC A;Google Classroom;Lengua
+957;Enseñanza no presencial. ;2 BAC A;Correos digitales;Lengua
+958;Enseñanza no presencial. ;2 BAC A;Google Classroom;Filosofía
+959;Enseñanza no presencial. ;2 BAC A;Correos digitales;Filosofía
+960;Enseñanza no presencial. ;2 BAC A;Moodle Centros;Matemáticas
+961;Enseñanza no presencial. ;2 BAC A;Google Classroom;Matemáticas
+962;Enseñanza no presencial. ;2 BAC A;Videoconferencia en directo;Matemáticas
+963;Enseñanza no presencial. ;2 BAC A;Moodle Centros;Geografía e Historia
+964;Enseñanza no presencial. ;2 BAC A;Videoconferencia en directo;Inglés
+965;Enseñanza no presencial. ;2 BAC A;Moodle Centros;Filosofía
+966;Enseñanza no presencial. ;2 BAC A;Correos digitales;Filosofía
+967;Enseñanza no presencial. ;2 BAC B;Moodle Centros;Tecnología
+968;Enseñanza no presencial. ;2 BAC B;Correos digitales;Tecnología
+969;Enseñanza no presencial. ;2 BAC B;Google Classroom;Geografía e Historia
+970;Enseñanza no presencial. ;2 BAC B;Google Classroom;Lengua
+971;Enseñanza no presencial. ;2 BAC B;Google Classroom;Filosofía
+972;Enseñanza no presencial. ;2 BAC B;Correos digitales;Filosofía
+973;Enseñanza no presencial. ;2 BAC B;Moodle Centros;Geografía e Historia
+974;Enseñanza no presencial. ;2 BAC B;Google Classroom;Matemáticas
+975;Enseñanza no presencial. ;2 BAC B;Videoconferencia en directo;Matemáticas
+976;Enseñanza no presencial. ;2 BAC B;Google Classroom;Inglés
+977;Enseñanza no presencial. ;2 BAC B;Correos digitales;Inglés
+978;Enseñanza no presencial. ;2 BAC B;Moodle Centros;Filosofía
+979;Enseñanza no presencial. ;2 BAC B;Correos digitales;Filosofía
+980;Enseñanza no presencial. ;2 BAC C;Moodle Centros;Biología y Geología
+981;Enseñanza no presencial. ;2 BAC C;Google Classroom;Biología y Geología
+982;Enseñanza no presencial. ;2 BAC C;Correos digitales;Biología y Geología
+983;Enseñanza no presencial. ;2 BAC C;Videoconferencia en directo;Biología y Geología
+984;Enseñanza no presencial. ;2 BAC C;Moodle Centros;Biología y Geología
+985;Enseñanza no presencial. ;2 BAC C;Correos digitales;Biología y Geología
+986;Enseñanza no presencial. ;2 BAC C;Google Classroom;Inglés
+987;Enseñanza no presencial. ;2 BAC C;Correos digitales;Inglés
+988;Enseñanza no presencial. ;2 BAC C;Plataformas de editoriales;Inglés
+989;Enseñanza no presencial. ;2 BAC C;Google Classroom;Biología y Geología
+990;Enseñanza no presencial. ;2 BAC C;Correos digitales;Biología y Geología
+991;Enseñanza no presencial. ;2 BAC C;Moodle Centros;Física y Química
+992;Enseñanza no presencial. ;2 BAC C;Correos digitales;Física y Química
+993;Enseñanza no presencial. ;2 BAC C;Videoconferencia en directo;Física y Química
+994;Enseñanza no presencial. ;2 BAC C;Moodle Centros;Matemáticas
+995;Enseñanza no presencial. ;2 BAC C;Google Classroom;Matemáticas
+996;Enseñanza no presencial. ;2 BAC C;Videoconferencia en directo;Matemáticas
+997;Enseñanza no presencial. ;2 BAC C;Google Classroom;Lengua
+998;Enseñanza no presencial. ;2 BAC C;Correos digitales;Lengua
+999;Enseñanza no presencial. ;2 BAC C;Videoconferencia en directo;Lengua
+1000;Enseñanza no presencial. ;2 BAC C;Moodle Centros;Filosofía
+1001;Enseñanza no presencial. ;2 BAC C;Correos digitales;Filosofía
+1002;Enseñanza no presencial. ;2 BAC D;Moodle Centros;Tecnología
+1003;Enseñanza no presencial. ;2 BAC D;Correos digitales;Tecnología
+1004;Enseñanza no presencial. ;2 BAC D;Moodle Centros;Física y Química
+1005;Enseñanza no presencial. ;2 BAC D;Google Classroom;Física y Química
+1006;Enseñanza no presencial. ;2 BAC D;Correos digitales;Física y Química
+1007;Enseñanza no presencial. ;2 BAC D;Videoconferencia en directo;Física y Química
+1008;Enseñanza no presencial. ;2 BAC D;Moodle Centros;Biología y Geología
+1009;Enseñanza no presencial. ;2 BAC D;Correos digitales;Biología y Geología
+1010;Enseñanza no presencial. ;2 BAC D;Google Classroom;Inglés
+1011;Enseñanza no presencial. ;2 BAC D;Correos digitales;Inglés
+1012;Enseñanza no presencial. ;2 BAC D;Videoconferencia en directo;Inglés
+1013;Enseñanza no presencial. ;2 BAC D;Google Classroom;Biología y Geología
+1014;Enseñanza no presencial. ;2 BAC D;Correos digitales;Biología y Geología
+1015;Enseñanza no presencial. ;2 BAC D;Moodle Centros;Geografía e Historia
+1016;Enseñanza no presencial. ;2 BAC D;Correos digitales;Geografía e Historia
+1017;Enseñanza no presencial. ;2 BAC D;Google Classroom;Lengua
+1018;Enseñanza no presencial. ;2 BAC D;Videoconferencia en directo;Lengua
+1019;Enseñanza no presencial. ;2 BAC D;Moodle Centros;Física y Química
+1020;Enseñanza no presencial. ;2 BAC D;Correos digitales;Física y Química
+1021;Enseñanza no presencial. ;2 BAC D;Videoconferencia en directo;Física y Química
+1022;Enseñanza no presencial. ;2 BAC D;Moodle Centros;Matemáticas
+1023;Enseñanza no presencial. ;2 BAC D;Moodle Centros;Filosofía
+1024;Enseñanza no presencial. ;2 BAC D;Correos digitales;Filosofía
+1025;Enseñanza no presencial. ;1 CFGS A;Google Classroom;Economía
+1026;Enseñanza no presencial. ;1 CFGS A;Correos digitales;Economía
+1027;Enseñanza no presencial. ;1 CFGS A;Google Classroom;Educación Física
+1028;Enseñanza no presencial. ;1 CFGS A;Google Classroom;Educación Física
+1029;Enseñanza no presencial. ;1 CFGS A;Correos digitales;Educación Física
+1030;Enseñanza no presencial. ;1 CFGS A;Google Classroom;Educación Física
+1031;Enseñanza no presencial. ;1 CFGS A;Correos digitales;Educación Física
+1032;Enseñanza no presencial. ;1 CFGS A;Google Classroom;Educación Física
+1033;Enseñanza no presencial. ;2 CFGS A;Google Classroom;Economía
+1034;Enseñanza no presencial. ;2 CFGS A;Correos digitales;Economía
+1035;Enseñanza no presencial. ;2 CFGS A;Google Classroom;Educación Física
+1036;Enseñanza no presencial. ;2 CFGS A;Google Classroom;Educación Física
+1037;Enseñanza no presencial. ;2 CFGS A;Google Classroom;Educación Física
+1038;Enseñanza no presencial. ;2 CFGS A;Correos digitales;Educación Física
+1039;Enseñanza no presencial. ;2 CFGS A;Google Classroom;Educación Física
+1040;Enseñanza no presencial. ;2 CFGS A;Correos digitales;Educación Física
+1041;Enseñanza no presencial. ;2 CFGS A;Videoconferencia en directo;Educación Física
+1042;Enseñanza no presencial. ;2 CFGS A;Google Classroom;Educación Física
+1043;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Ninguno;Plataformas de editoriales;Biología y Geología
+1044;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;5 o menos de 5;Videoconferencia en directo;Inglés
+1045;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;5 o menos de 5;Videoconferencia en directo;Biología y Geología
+1046;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;5 o menos de 5;Google Classroom;Matemáticas
+1047;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;5 o menos de 5;Moodle Centros;Matemáticas
+1048;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;5 o menos de 5;Google Classroom;Orientación
+1049;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;5 o menos de 5;Correos digitales;Orientación
+1050;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;5 o menos de 5;Moodle Centros;Orientación
+1051;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 6 y 10;Google Classroom;Física y Química
+1052;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 6 y 10;Moodle Centros;Educación plástica y visual
+1053;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 6 y 10;Correos digitales;Física y Química
+1054;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 11 y 15;Videoconferencia en directo;Inglés
+1055;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 11 y 15;Correos digitales;Biología y Geología
+1056;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 11 y 15;Correos digitales;Matemáticas
+1057;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 11 y 15;Google Classroom;Lengua
+1058;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 11 y 15;Plataformas de editoriales;Lengua
+1059;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 11 y 15;Google Classroom;Geografía e Historia
+1060;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 11 y 15;Correos digitales;Matemáticas
+1061;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 11 y 15;Correos digitales;Geografía e Historia
+1062;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 11 y 15;Moodle Centros;Física y Química
+1063;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 11 y 15;Correos digitales;Física y Química
+1064;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 11 y 15;Videoconferencia en directo;Física y Química
+1065;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 11 y 15;Correos digitales;Educación plástica y visual
+1066;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 11 y 15;Correos digitales;Inglés
+1067;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 15 y 20;Correos digitales;Geografía e Historia
+1068;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 15 y 20;Moodle Centros;Matemáticas
+1069;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 15 y 20;Correos digitales;Matemáticas
+1070;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 15 y 20;Google Classroom;Lengua
+1071;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 15 y 20;Google Classroom;Lengua
+1072;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 15 y 20;Google Classroom;Matemáticas
+1073;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Moodle Centros;Biología y Geología
+1074;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Videoconferencia en directo;Biología y Geología
+1075;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Moodle Centros;Matemáticas
+1076;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Google Classroom;Lengua
+1077;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Google Classroom;Educación Física
+1078;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Google Classroom;Biología y Geología
+1079;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Google Classroom;Música
+1080;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Correos digitales;Música
+1081;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Google Classroom;Inglés
+1082;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Correos digitales;Inglés
+1083;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Moodle Centros;Geografía e Historia
+1084;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Google Classroom;Lengua
+1085;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Correos digitales;Lengua
+1086;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Google Classroom;Matemáticas
+1087;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Videoconferencia en directo;Matemáticas
+1088;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Google Classroom;Inglés
+1089;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Google Classroom;Matemáticas
+1090;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Videoconferencia en directo;Matemáticas
+1091;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Google Classroom;Geografía e Historia
+1092;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Google Classroom;Inglés
+1093;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Correos digitales;Inglés
+1094;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Plataformas de editoriales;Inglés
+1095;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Google Classroom;Educación Física
+1096;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Correos digitales;Educación Física
+1097;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 20 y 30;Videoconferencia en directo;Educación Física
+1098;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 30 y 40;Moodle Centros;Matemáticas
+1099;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 30 y 40;Videoconferencia en directo;Matemáticas
+1100;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 30 y 40;Moodle Centros;Matemáticas
+1101;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 30 y 40;Google Classroom;Lengua
+1102;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 30 y 40;Correos digitales;Lengua
+1103;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 30 y 40;Videoconferencia en directo;Lengua
+1104;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 30 y 40;Moodle Centros;Geografía e Historia
+1105;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 40 y 50;Correos digitales;Biología y Geología
+1106;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 40 y 50;Correos digitales;Biología y Geología
+1107;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 40 y 50;Videoconferencia en directo;Matemáticas
+1108;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 50 y 60;Google Classroom;Inglés
+1109;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 50 y 60;Correos digitales;Inglés
+1110;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 50 y 60;Correos digitales;Física y Química
+1111;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 60 y 70;Google Classroom;Matemáticas
+1112;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 60 y 70;Moodle Centros;Inglés
+1113;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 60 y 70;Correos digitales;Inglés
+1114;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 60 y 70;Google Classroom;Lengua
+1115;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 60 y 70;Moodle Centros;Física y Química
+1116;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 60 y 70;Correos digitales;Física y Química
+1117;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 60 y 70;Videoconferencia en directo;Física y Química
+1118;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 60 y 70;Google Classroom;Física y Química
+1119;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 70 y 80;Moodle Centros;Lengua
+1120;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 70 y 80;Correos digitales;Lengua
+1121;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 80 y 90;Moodle Centros;Tecnología
+1122;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 80 y 90;Correos digitales;Tecnología
+1123;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 80 y 90;Moodle Centros;Lengua
+1124;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 80 y 90;Correos digitales;Lengua
+1125;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 80 y 90;Google Classroom;Tecnología
+1126;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 80 y 90;Google Classroom;Inglés
+1127;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 90 y 100;Google Classroom;Biología y Geología
+1128;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 90 y 100;Moodle Centros;Biología y Geología
+1129;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 90 y 100;Correos digitales;Inglés
+1130;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 90 y 100;Plataformas de editoriales;Inglés
+1131;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 90 y 100;Correos digitales;Tecnología
+1132;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 90 y 100;Google Classroom;Educación Física
+1133;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 90 y 100;Google Classroom;Biología y Geología
+1134;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 90 y 100;Videoconferencia en directo;Biología y Geología
+1135;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 90 y 100;Google Classroom;Matemáticas
+1136;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 90 y 100;Videoconferencia en directo;Matemáticas
+1137;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 90 y 100;Google Classroom;Educación Física
+1138;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Entre 90 y 100;Correos digitales;Educación Física
+1139;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Google Classroom;Geografía e Historia
+1140;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Google Classroom;Francés
+1141;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Plataformas de editoriales;Francés
+1142;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Google Classroom;Física y Química
+1143;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Google Classroom;Inglés
+1144;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Correos digitales;Inglés
+1145;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Google Classroom;Inglés
+1146;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Google Classroom;Francés
+1147;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Correos digitales;Francés
+1148;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Videoconferencia en directo;Francés
+1149;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Google Classroom;Lengua
+1150;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Plataformas de editoriales;Lengua
+1151;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Google Classroom;Tecnología
+1152;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Correos digitales;Tecnología
+1153;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Google Classroom;Economía
+1154;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Correos digitales;Economía
+1155;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Google Classroom;Educación Física
+1156;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Google Classroom;Filosofía
+1157;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Correos digitales;Filosofía
+1158;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Google Classroom;Educación plástica y visual
+1159;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Google Classroom;Educación Física
+1160;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Correos digitales;Educación Física
+1161;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Google Classroom;Lengua
+1162;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Moodle Centros;Filosofía
+1163;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Correos digitales;Filosofía
+1164;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Moodle Centros;Física y Química
+1165;¿Cuántos alumnos usan en tus clases cada herramienta digital aproximadamente? ;Más de 100;Plataformas de editoriales;Física y Química

@@ -1,0 +1,228 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{titling}
+\setlength{\droptitle}{-8em}
+\posttitle{\par\end{center}\vspace{-2em}}
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Asset Return Computations
+\end_layout
+
+\begin_layout Section
+Simple net returns
+\end_layout
+
+\begin_layout Standard
+Assume we observe the price of an asset at the end of a period where the
+ period could be days, months, or years, etc.
+ We could then say that at the end of period 
+\begin_inset Formula $t$
+\end_inset
+
+, the asset price is 
+\begin_inset Formula $P_{t}$
+\end_inset
+
+ and at the end of the previous period, 
+\begin_inset Formula $t-1$
+\end_inset
+
+, the price was 
+\begin_inset Formula $P_{t-1}$
+\end_inset
+
+.
+ We define the 
+\emph on
+simple net return
+\emph default
+ as the percentage change in the price:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{t}=\frac{P_{t}-P_{t-1}}{P_{t-1}}=\frac{P_{t}}{P_{t-1}}-1=\%\Delta P_{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Log returns
+\end_layout
+
+\begin_layout Standard
+If we let 
+\begin_inset Formula $R_{t}$
+\end_inset
+
+ denote the simple net return, then we can define the 
+\emph on
+continuously compounded return
+\emph default
+, 
+\begin_inset Formula $r_{t}$
+\end_inset
+
+ as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r_{t}=\ln(1+R_{t})=\ln\left(\frac{P_{t}}{P_{t-1}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\ln(\cdot)$
+\end_inset
+
+ is the natural log function.
+ We call this the continuously compounded return because we can manipulate
+ the above equation into:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P_{t}=P_{t-1}e^{r_{t}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so that 
+\begin_inset Formula $r_{t}$
+\end_inset
+
+ is the continuously compounded growth rate in prices between periods 
+\begin_inset Formula $t-1$
+\end_inset
+
+ and 
+\begin_inset Formula $t$
+\end_inset
+
+ whereas 
+\begin_inset Formula $R_{t}$
+\end_inset
+
+ is the simple growth rate in prices between periods 
+\begin_inset Formula $t-1$
+\end_inset
+
+ and 
+\begin_inset Formula $t$
+\end_inset
+
+ without any compounding.
+ Note that the continuously compounded return is often referred to as the
+ 
+\emph on
+log return
+\emph default
+.
+\end_layout
+
+\begin_layout Section
+Annualized returns and annualized volatility
+\end_layout
+
+\begin_layout Standard
+We can annualize continuously compounded returns and return volatility (the
+ standard deviation of returns) using the following formulas:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+r_{A} & = & 100\cdot T\cdot\mathrm{\text{mean}}(r_{t})\\
+\sigma_{A} & = & 100\cdot\sqrt{T}\cdot\mathrm{\text{sd}}(r_{t})\\
+\text{where:}\\
+r_{A} & = & \text{annualized continously compounded return}\\
+\sigma_{A} & = & \text{annualized volatility}\\
+T & = & \text{number of time periods per year}\\
+r_{t} & = & \text{continously compounded return series}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

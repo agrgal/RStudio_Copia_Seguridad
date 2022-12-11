@@ -1,0 +1,6 @@
+df_pearson=read.table("http://aprender.uib.es/Rdir/pearson.txt",header=TRUE)
+l1=lm(Hijos~Padres,data=df_pearson)
+plot(df_pearson)
+abline(l1)
+summary(l1)
+cat("\014")

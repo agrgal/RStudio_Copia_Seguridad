@@ -1,0 +1,347 @@
+---
+title: "Estudio de acceso a las cuentas de G Suite @seritium.es"
+author: "Aurelio Gallardo"
+date: "9 de febrero de 2021"
+lang: es
+output: 
+  pdf_document:
+    number_sections: true
+    toc: true
+    pandoc_args: --listings
+    includes:
+      in_header: preamble.tex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
+```
+
+```{r iniciales, echo=FALSE, message=FALSE}
+cat("\014") 
+
+library(printr)
+# A) Obtengo datos de diferencia con el día elegido
+fechaInicial="2021/02/09 00:00:00" #Formato año / mes / día
+fechaPpo="2020/09/15 00:00:00" # primer día de clase en septiembre
+datos = read.csv2("correos3.csv",header=TRUE,sep=",")
+datos$Retraso=as.POSIXct(datos$Global,format="%Y-%m-%d %H:%M:%S",tz=Sys.timezone())
+diaReferencia=as.POSIXct(fechaInicial,format="%Y/%m/%d %H:%M:%S",tz=Sys.timezone())
+datos$Retraso=round(difftime(diaReferencia,datos$Retraso,units="days",0))
+datos$Retraso=as.integer(datos$Retraso)
+# # https://stackoverflow.com/questions/25960517/how-to-convert-date-and-time-from-character-to-datetime-type
+
+# # A1) Ordenar por vector datos
+clases=unique(datos$Clase)
+clases=c("1 ESO A","1 ESO B","1 ESO C","1 ESO D","1 ESO E",
+         "2 ESO A","2 ESO B","2 ESO C","2 ESO D","2 ESO E",
+         "3 ESO A","3 ESO B","3 ESO C","3 ESO D","3 ESO E",
+         "4 ESO A","4 ESO B","4 ESO C","4 ESO D","4 ESO E","4 ESO X",
+         "1 BACH A","1 BACH B","1 BACH C","1 BACH D",
+         "2 BACH A","2 BACH B","2 BACH C","2 BACH D")
+# Ordenar datos según un vector en un orden dado
+# match da el resultado, por cada valor de datos$Clase en qué lugar está del vector clases
+# y order los ordena.
+datos=datos[order(match(datos$Clase,clases)),]
+# 
+# # B) Distintos subdataframes
+diaPpo =as.POSIXct(fechaPpo,format="%Y/%m/%d %H:%M:%S",tz=Sys.timezone())
+diasDesdeComienzo=round(as.integer(difftime(diaReferencia,diaPpo,units="days",0)))
+datos$Retraso[which(datos$Retraso>diasDesdeComienzo)]=diasDesdeComienzo
+nunca=datos[is.na(datos$Retraso) | datos$Retraso>=diasDesdeComienzo,]
+# Incluyo un vector Imprime
+nunca$Imprime="N"
+#Cambia algunos a sí
+# nunca$Imprime[c(1:7,9,12,20)]="S"
+nunca$Imprime="S" #ahora mismo las imprime todas
+
+datos2=datos[complete.cases(datos),]
+masMes=datos2[datos2$Retraso>=30 & datos2$Retraso<diasDesdeComienzo,]
+masDosSemanas=datos2[which(datos2$Retraso>=14 & datos2$Retraso<30),]
+normal=datos2[datos2$Retraso<14,]
+rm(datos2) #borrado de la matriz de complete cases
+#
+#
+# # C) Datos agregados por niveles
+cursos=c("1 ESO","2 ESO","3 ESO","4 ESO","1 BAC","2 BAC")
+datos$Nivel=substr(datos$Clase,3,5)
+datos$Curso=substr(datos$Clase,1,5)
+datos$Retraso[datos$Retraso>=diasDesdeComienzo]=NA # permite no teenr en cuenat a los que no han entrado nunca
+porClase=aggregate(Retraso~Clase,data=datos,FUN=median,na.rm=TRUE)
+porClase=porClase[order(match(porClase$Clase,clases)),]
+porCurso=aggregate(Retraso~Curso,data=datos,FUN=median,na.rm=TRUE)
+porCurso=porCurso[order(match(porCurso$Curso,cursos)),]
+porNiveles=aggregate(Retraso~Nivel,data=datos,FUN=median,na.rm=TRUE)
+
+# D) retrasos en acceso a Correo
+datos$RCorreos=as.POSIXct(datos$correoMax,format="%Y-%m-%d %H:%M:%S",tz=Sys.timezone())
+datos$RCorreos=round(difftime(diaReferencia,datos$RCorreos,units="days",0))
+datos$RCorreos=as.integer(datos$RCorreos)
+datos$RCorreos[which(datos$RCorreos>diasDesdeComienzo)]=diasDesdeComienzo
+datos$RCorreos[is.na(datos$RCorreos)]=diasDesdeComienzo
+porClaseCorreos=aggregate(RCorreos~Clase,data=datos,FUN=median,na.rm=TRUE)
+porClaseCorreos=porClaseCorreos[order(match(porClaseCorreos$Clase,clases)),]
+# E) retrasos en acceso a GClassroom
+datos$RClassroom=as.POSIXct(datos$Classroom,format="%Y-%m-%d %H:%M:%S",tz=Sys.timezone())
+datos$RClassroom=round(difftime(diaReferencia,datos$RClassroom,units="days",0))
+datos$RClassroom=as.integer(datos$RClassroom)
+datos$RClassroom[which(datos$RClassroom>diasDesdeComienzo)]=diasDesdeComienzo
+datos$RClassroom[is.na(datos$RClassroom)]=diasDesdeComienzo
+porClaseClassroom=aggregate(RClassroom~Clase,data=datos,FUN=median,na.rm=TRUE)
+porClaseClassroom=porClaseClassroom[order(match(porClaseClassroom$Clase,clases)),]
+# F) retrasos en acceso a Drive
+datos$RDrive=as.POSIXct(datos$Drive,format="%Y-%m-%d %H:%M:%S",tz=Sys.timezone())
+datos$RDrive=round(difftime(diaReferencia,datos$RDrive,units="days",0))
+datos$RDrive=as.integer(datos$RDrive)
+datos$RDrive[which(datos$RDrive>diasDesdeComienzo)]=diasDesdeComienzo
+datos$RDrive[is.na(datos$RDrive)]=diasDesdeComienzo
+porClaseDrive=aggregate(RDrive~Clase,data=datos,FUN=median,na.rm=TRUE)
+porClaseDrive=porClaseDrive[order(match(porClaseDrive$Clase,clases)),]
+
+```
+
+# Introducción
+
+En este estudio se analiza el conjunto de datos obtenidos en la consola de administración de GSuite, en la que se puede obtener datos de cuando un usuario usa el correo u otra aplicación como GClassroom. Así, se puede obtener la fecha y hora del último ingreso, averiguando por tanto cuándo ha accedido al sistema.
+
+Esta información puede ser útil a los tutores, en cuanto sabrán cuál es el histórico de acceso de su alumnado. Por ejemplo, saber si nunca ha accedido puede mostrarnos posibles problemas de conexión. Si se ha conectado en algún momento pero hace mucho tiempo, también puede indicarlo. O conocer, si no tiene problemas de conexión, quién o quiénes no acceden a esta herramienta detectando posibles problemas de rendimiento.
+
+\vspace{1pt}
+<!-- \par\noindent\rule{\textwidth}{0.4pt} -->
+\begin{center}
+\par\noindent\rule{20em}{0.4pt}
+\end{center}
+<!-- forma de introducir una línea horizontal que ocupe todo el ancho -->
+\vspace{1pt}
+
+# Alumnado que no ha entrado nunca
+<!-- // http://sae.saiblogs.inf.um.es/tablas-en-pdf-con-rmarkdown-y-knitr/ -->
+
+```{r tablaNunca, echo=FALSE, eval=TRUE}
+kable( nunca[nunca$Imprime=="S",c(1,2,4,3)] , caption = "Alumnado que no entró nunca en su cuenta @seritium.es"
+       , align = c('l', 'l', 'l', 'l')
+       , col.names = c("Nombre","Apellidos","Email","Curso")
+       , row.names = FALSE
+       , digits = 1
+       , format.args = list( decimal.mark = ",")
+      )
+```
+En total son, \color[rgb]{0.522,0.027,0.192}**`r dim(nunca[nunca$Imprime=="S",])[1]`** \color{black} alumnos/as.
+
+\vspace{1pt}
+<!-- \par\noindent\rule{\textwidth}{0.4pt} -->
+\begin{center}
+\par\noindent\rule{20em}{0.4pt}
+\end{center}
+<!-- forma de introducir una línea horizontal que ocupe todo el ancho -->
+\vspace{1pt}
+
+# Alumnado que entró hace más de un mes
+
+```{r tablamasMes, echo=FALSE, eval=TRUE}
+kable( masMes[,c(1,2,4,3,12)] , caption = "Alumnado que entró hace más de un mes"
+       , align = c('l', 'l', 'l', 'l','c')
+       , col.names = c("Nombre","Apellidos","Email","Curso",'Días retraso')
+       , row.names = FALSE
+       , digits = 1
+       , format.args = list( decimal.mark = ",")
+      )
+```
+En total son, \color[rgb]{0.522,0.027,0.192}**`r dim(masMes)[1]`** \color{black} alumnos/as.
+
+\vspace{1pt}
+<!-- \par\noindent\rule{\textwidth}{0.4pt} -->
+\begin{center}
+\par\noindent\rule{20em}{0.4pt}
+\end{center}
+<!-- forma de introducir una línea horizontal que ocupe todo el ancho -->
+\vspace{1pt}
+
+# Alumnado que entró hace dos semanas pero antes de un mes
+
+```{r tablamasDosSemanas, echo=FALSE, eval=TRUE}
+kable( masDosSemanas[,c(1,2,4,3,12)] , caption = "Alumnado que entró entre dos semanas y un mes"
+       , align = c('l', 'l', 'l', 'l','c')
+       , col.names = c("Nombre","Apellidos","Email","Curso",'Días retraso')
+       , row.names = FALSE
+       , digits = 1
+       , format.args = list( decimal.mark = ",")
+      )
+```
+En total son, \color[rgb]{0.522,0.027,0.192}**`r dim(masDosSemanas)[1]`** \color{black} alumnos/as.
+
+
+\vspace{1pt}
+<!-- \par\noindent\rule{\textwidth}{0.4pt} -->
+\begin{center}
+\par\noindent\rule{20em}{0.4pt}
+\end{center}
+<!-- forma de introducir una línea horizontal que ocupe todo el ancho -->
+\vspace{1pt}
+
+# Estadísticas de acceso
+
+## Caja intercuartílica de Retrasos
+
+```{r gRetraso,  out.width="70%", fig.align="center", echo=FALSE}
+# https://r4ds.had.co.nz/graphics-for-communication.html#figure-sizing
+library(RColorBrewer)
+colorines <- brewer.pal(8, "Accent")
+# dibujo
+ciRetrasos = boxplot(datos$Retraso, #para quitar del estudio quienes no han entrado nunca
+        main="Caja intercuartílica de los retrasos",
+        col=colorines[3],
+        border=colorines[5],
+        horizontal=T,
+        yaxt="n", #remove de y axis
+        lwd=1 #ancho de los bordes de las cajas intercuartílicas
+        )
+# eje Y
+# axis(side=2,las=2)
+```
+La caja intercuartílica arroja una mediana de  \color[rgb]{0.522,0.027,0.192}**`r median(datos$Retraso,na.rm=TRUE)`**\color{black}, lo que indica que un alumno medio consulta su cuenta @seritium.es al menos cada cuatro días. El valor superior de la caja intercuartílica (cuantil 0.75) es de \color[rgb]{0.522,0.027,0.192}**`r ciRetrasos$stats[4]`**\color{black}; el 75% del alumnado consulta su cuenta antes de que pase ese intervalo. El 'whisker' o pestaña superior se calcula en  \color[rgb]{0.522,0.027,0.192}**`r ciRetrasos$stats[5]`**\color{black}; los valores superiores a ese retraso son atípicos respecto a la totalidad del centro.
+
+NOTA: para hacer este estudio no se tiene en cuenta quienes no han entrado nunca a sus cuentas.
+
+# Estudio comparativo por clases, cursos y niveles
+
+```{r graficaClases,  out.width="90%", fig.align="center", fig.height=4, echo=FALSE}
+# https://r4ds.had.co.nz/graphics-for-communication.html#figure-sizing
+library(RColorBrewer)
+colorines <- brewer.pal(12, "Set3")
+porPar= barplot(porClase$Retraso,
+        ylab="Días de retraso",
+        main="Mediana de retrasos por cada clase",
+        col=colorines,
+        names.arg= porClase$Clase,
+        ylim=c(0,max(porClase$Retraso)+1),
+        cex.names = 0.6, cex.lab=0.8, cex.main=0.8,
+        las=2, # orientación vertical
+        font.axis=2, # bold 
+        axis.lty=1, # línea horizontal
+        axes=TRUE)
+text(porPar,cex=0.5,round(porClase$Retraso,1)
+     ,y=porClase$Retraso+0.5,col="black",srt=0,font=2)
+```
+En la gráfica se observan algunos cursos más retrasados que otros, como 2º ESO C, con ocho retrasos. Le siguen 2º ESO D y E, así como 1º ESO A.
+
+\vspace{1pt}
+<!-- \par\noindent\rule{\textwidth}{0.4pt} -->
+\begin{center}
+\par\noindent\rule{20em}{0.4pt}
+\end{center}
+<!-- forma de introducir una línea horizontal que ocupe todo el ancho -->
+\vspace{8pt}
+
+```{r gNiveles,  fig.align="center", fig.height=2.5, echo=FALSE}
+library(RColorBrewer)
+colorines <- brewer.pal(8, "Set2") 
+par(mfrow=c(1,2),pin=c(1.5,1.5))
+# Gráfica barplot retrasos  (NIVELES) --> rev, al revés
+porPar= barplot(rev(porNiveles$Retraso),
+                ylab="Días de retraso",
+                main="Mediana por niveles",
+                cex.lab=0.6,
+                cex.main=0.7,
+                col=colorines,
+                names.arg= rev(porNiveles$Nivel),
+                ylim=c(0,8),
+                cex.names = 0.6, 
+                las=2, # orientación vertical
+                font.axis=2, # bold 
+                axis.lty=1, # línea horizontal
+                axes=TRUE,)
+text(porPar,cex=0.5,rev(porNiveles$Retraso)
+     ,y=rev(porNiveles$Retraso)+0.5,col="black",srt=0,font=2)
+
+# Gráfica barplot retrasos (CURSOS)
+porPar= barplot(porCurso$Retraso,
+                ylab="Días de retraso",
+                main="Mediana por cursos",
+                cex.lab=0.6,
+                cex.main=0.7,
+                col=colorines,
+                names.arg= porCurso$Curso,
+                ylim=c(0,8),
+                cex.names = 0.6, 
+                las=2, # orientación vertical
+                font.axis=2, # bold 
+                axis.lty=1, # línea horizontal
+                axes=TRUE,)
+text(porPar,cex=0.5,porCurso$Retraso
+     ,y=porCurso$Retraso+0.5,col="black",srt=0,font=2)
+par(mfrow=c(1,1))
+```
+Parece evidente viendo las gráficas que un alumno/a medio de BACHILLERATO consulta su cuenta con más asiduidad que un alumno/a de la ESO: \color[rgb]{0.522,0.027,0.192}**`r porNiveles[porNiveles$Nivel=="BAC",2]` días **\color{black} de retraso frente a   \color[rgb]{0.522,0.027,0.192}**`r porNiveles[porNiveles$Nivel=="ESO",2]` días**\color{black}, aunque la diferencia es mínima.
+
+Por otra parte, los cursos de 1º y 2º ESO se retrasan más en consultar sus cuentas, que de 3º ESO en adelante, con la excepción de 4º ESO. 
+
+# Conclusiones a los datos globales
+
+El alumnado más mayor parece tener una mayor tendencia a consultar antes sus cuentas del IES Seritium (independientemente que use el correo, GClassroom o acceda a ficheros colgados en Drive). Esta circunstancia podría tener varias interpretaciones; rememorando lo analizado en la evaluación de los mensajes de email, se me ocurren dos: la primera, que el alumnado de mayor edad tiene una mayor competencia digital y por tanto usa más sus cuentas, y la segunda, que este alumnado más mayor asiste al instituto en circunstancias de semipresencialidad, con lo que necesita o usa más las herramientas online disponibles.
+
+Sin embargo, ambas razones no pueden ser concluyentes. Faltarían datos de acceso a Moodle, mucho más difíciles de obtener, para completar el espectro de acceso a las herramientas online y  estimar el grado de eficacia de la enseñanza no presencial en el centro.
+
+Estos datos globales pueden especificarse: ¿qué usa el alumnado más? ¿Su correo? ¿Presenta trabajos en Google Classroom? ¿Simplemente accede a ficheros que sus profesores les envían? Intentaré dar respuesta a estas preguntas a continuación.
+
+\color[rgb]{0.522,0.027,0.192}NOTA IMPORTANTE: \color{black} por cada alumno/a he calculado el retraso en acceder a GMail, GClassroom y Drive - ficheros online -, según los datos del informe de administración **"Informes de usuario - Cuentas"**, y para el dato global anteriormente descrito, he escogido para cada alumno ***el menor retraso de los tres anteriores***. En las gráficas que siguen, parecen existir contradicciones. Ya veremos que el dato global (mediana) de algunos cursos es inferior a las medianas del retraso de acceso a las aplicaciones por separado. Esto no indica que estén los datos equivocados, sino que probablemente el curso que tenga este comportamiento tiene una dispersión alta, con uso dispar de las aplicaciones y alumnado que hace un uso frecuente conviviendo con alumnado que las usa con muy poca frecuencia. También hay que tener en cuenta que he ignorado, en la gráfica anterior, el alumnado que jamás ha accedido a su cuenta, en ninguna de las tres aplicaciones. Esta circunstancia no puede ser ignorada en las siguientes gráficas. 
+
+# Estudio comparativo por clases de uso específico del correo @seritium.es
+```{r graficaClasesCorreo,  out.width="90%", fig.align="center", fig.height=4, echo=FALSE}
+# https://r4ds.had.co.nz/graphics-for-communication.html#figure-sizing
+library(RColorBrewer)
+colorines <- brewer.pal(12, "Set3")
+porPar= barplot(porClaseCorreos$RCorreos,
+        ylab="Días de retraso",
+        main="Mediana de retrasos por cada clase - Correos",
+        col=colorines,
+        names.arg= porClaseCorreos$Clase,
+        ylim=c(0,max(porClaseCorreos$RCorreos)*1.1),
+        cex.names = 0.6, cex.lab=0.8, cex.main=0.8,
+        las=2, # orientación vertical
+        font.axis=2, # bold 
+        axis.lty=1, # línea horizontal
+        axes=TRUE)
+text(porPar,cex=0.5,round(porClaseCorreos$RCorreos,1)
+     ,y=porClaseCorreos$RCorreos+2,col="black",srt=0,font=2)
+```
+ \color[rgb]{0.522,0.027,0.192}**`r diasDesdeComienzo` días **\color{black} son los que han pasado desde el comienzo de las clases. Hay bastantes alumnos, como el de 1º ESO E o 2º ESO E, que jamás ha usado el correo electrónico como herramienta de comunicación digital (como el valor representado es la mediana eso **no significa** que todos los alumnos de esa clase jamás lo hayan usado, sino que ***más del 50% jamás lo ha usado***)  . Por otra parte, y con honrosas salvedades, parece exclusiva de los niveles de 4º ESO en adelante, siendo muy poco usada en ESO.
+ 
+# Estudio comparativo por clases de uso específico de GClassroom y acceso a ficheros en Drive.
+```{r graficaClasesGClassroom,  out.width="90%", fig.align="center", fig.height=4, echo=FALSE}
+# https://r4ds.had.co.nz/graphics-for-communication.html#figure-sizing
+library(RColorBrewer)
+colorines <- brewer.pal(12, "Set3")
+porPar= barplot(porClaseClassroom$RClassroom,
+        ylab="Días de retraso",
+        main="Mediana de retrasos por cada clase - GClassroom",
+        col=colorines,
+        names.arg= porClaseClassroom$Clase,
+        ylim=c(0,max(porClaseClassroom$RClassroom)+2),
+        cex.names = 0.6, cex.lab=0.8, cex.main=0.8,
+        las=2, # orientación vertical
+        font.axis=2, # bold 
+        axis.lty=1, # línea horizontal
+        axes=TRUE)
+text(porPar,cex=0.5,round(porClaseClassroom$RClassroom,1)
+     ,y=porClaseClassroom$RClassroom+0.5,col="black",srt=0,font=2)
+```
+```{r graficaClasesDrive,  out.width="90%", fig.align="center", fig.height=4, echo=FALSE}
+# https://r4ds.had.co.nz/graphics-for-communication.html#figure-sizing
+library(RColorBrewer)
+colorines <- brewer.pal(12, "Set3")
+porPar= barplot(porClaseDrive$RDrive,
+        ylab="Días de retraso",
+        main="Mediana de retrasos por cada clase - Ficheros",
+        col=colorines,
+        names.arg= porClaseDrive$Clase,
+        ylim=c(0,max(porClaseDrive$RDrive)+2),
+        cex.names = 0.6, cex.lab=0.8, cex.main=0.8,
+        las=2, # orientación vertical
+        font.axis=2, # bold 
+        axis.lty=1, # línea horizontal
+        axes=TRUE)
+text(porPar,cex=0.5,round(porClaseDrive$RDrive,1)
+     ,y=porClaseDrive$RDrive+0.5,col="black",srt=0,font=2)
+```
+Sospecho, aunque tendría que verificarlo con el servicio de asistencia de Google, que el uso de GClassroom tiene que ver con la entrega de tareas dentro de la aplicación y el uso de Drive con el acceso a ficheros para descargarse contenidos o ejercicios (bien sea a través de aplicaciones como GClassroom o bien a través de enlaces enviados por correo o por otro medio). *Si esta interpretación es correcta* , parece evidente que de forma global la actividad que más se lleva a cabo de forma online es la descarga de ficheros, pues es la que menos retrasos genera. Y como la forma de la curva en la descarga de ficheros parece corresponder, en cierta forma, con la de GClassroom, no me parece descabellado afirmar que el alumnado usa GClassroom como contenedor de ejercicios y contenidos que se descargan antes que como medio para hacer entregas de tareas. 
