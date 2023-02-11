@@ -6,9 +6,10 @@ Edad=pediatria$Edad
 Peso = pediatria$Peso
 Sexo = pediatria$Sexo
 rm(pediatria)
+# Si no lo reconoce como factor poner Sexo=as.factor(Sexo)
 
 t1=table(Edad,Peso,Sexo)
-t2=ftable(Edad,Peso,Sexo)
+t2=table(Edad,Peso,Sexo)
 t1
 t2
 
@@ -18,7 +19,7 @@ t2
 cat("\014")
 
 t1["8",,"F"]
-t2["9","40",]
+t2["9","40",] # Da errores. Poner t2 sin ftable
 
 ftable(prop.table(t1)*100,col.vars=c("Sexo","Edad"))
 

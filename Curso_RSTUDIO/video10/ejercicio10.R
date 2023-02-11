@@ -44,12 +44,12 @@ text(migrafica, partidos0X + 0.1 , partidos0X, cex=0.6,pos=3)
 par = old.par
 
 # Gráfica de los partidos cuyo resultado es  0 - X, según los goles de los visitantes
-partidosXX = t4
-colores=topo.colors(length(partidos0X))
+partidosXX = t4[,"X"]
+colores=topo.colors(length(partidosXX))
 old.par=par()
 par=(mar=c(0,0,0,0))
 migrafica = barplot(partidosXX,main="Nº partidos X-X ",beside=TRUE,xlab="X",ylab="Nº partidos",
-                    horiz=FALSE,col=colores, ylim=c(0,max(partidos0X)+20),
+                    horiz=FALSE,col=colores, ylim=c(0,max(partidosXX)+20),
                     legend.text =names(t4),
                     args.legend = list(x=20,y=40,cex=0.5,horiz=TRUE,text.col="darkgreen"))
 text(migrafica, partidosXX + 0.1 , partidosXX, cex=0.6,pos=3) 
