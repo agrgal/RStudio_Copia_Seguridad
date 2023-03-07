@@ -1,0 +1,83 @@
+---
+title: "Trabajo sobre el trigo"
+author: "Aurelio Gallardo"
+date: "7 de Marzo de 2023"
+lang: es
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Trabajo sobre el trigo
+
+Incluimos los datos sobre la altura de las plantas de trigo con la orden **trigo= read.csv("trigo.csv", header= TRUE, sep = ",")** 
+
+```{r datos,echo=FALSE, message=FALSE}
+i = 10
+nombre = paste0("trigo - pareja",as.character(i),".csv")
+    trigo= read.csv(nombre, header= TRUE, sep = ",")
+      altura=trigo$altura
+      media=mean(altura)
+      mediana=median(altura)
+      moda=which(table(altura)==max(table(altura)))
+      valor = table(altura)[moda]
+      moda = names(moda) #obtiene el valor verdadero de la moda 
+```
+
+La media de los datos de altura es `r media` cm, la mediana `r mediana` cm y la moda es `r moda` con una frecuencia de `r valor`
+
+```{r datos2,echo=FALSE, message=FALSE}
+  #Apartado 3
+  ord=sort(altura)
+  datos = ord[c(999,1000,1001)]
+```
+Ordenamos los datos de altura con la orden **sort**. Podemos ver los datos en las posiciones 999,1000 y 1001, para ver si coincide con la mediana: `r datos`
+
+```{r datos3,echo=FALSE, message=FALSE}
+  #Apartado 4
+  quant25 = quantile(altura,0.25)
+  quant75 = quantile(altura,0.75)
+  perc35 = quantile(altura,0.35)
+  #Apartado 5
+  rango = diff(range(altura))
+  rangoIC = quantile(altura, 0.75)-quantile(altura,0.25)
+  #Apartado 6IQR()
+  n=length(altura)
+  #Varianza muestral
+  varianzaMuestral = var(altura)
+  #Desviación típica muestral
+  DTmuestral = sd(altura)
+  #Varianza normal (verdadera)
+  varianzaNormal = var(altura)*(n-1)/n
+  #Desviacion tipica normal
+  DTnormal = sd(altura)*(sqrt((n-1)/n))
+```
+Cálculos
+  
+  * Primer cuartil (25%): `r quant25`
+  * Tercer cuartil (75%): `r quant75`
+  * Cuantil 35%: `r perc35`
+  * Rango: `r rango`
+  * Rango intercuartílico: `r rangoIC`
+
+Cálculos estadísticos de dispersión 
+
+  * Varianza muestral: `r varianzaMuestral`
+  * Desviación típica: `r DTmuestral`
+  * Varianza normal: `r varianzaNormal`
+  * Desviación típica normal: `r DTnormal`
+
+```{r datos4, echo = FALSE}
+  #Apartado 7
+  altura[c(2000)]=max(altura)*1.5 #--> cambia el último dato a 1.5 veces el máximo
+  #Apartado 8
+  boxplot(altura,
+          xlab="Trigo",ylab="Altura",notch = TRUE,col = c("blue"))
+  abline(h=mean(altura),col=c("orange"))
+```
+
+

@@ -23,6 +23,7 @@ liga = futbol[,c(3,4)]
 # Ordenar los factores
 liga$Quiniela = ordered(liga$Quiniela,levels=c("1","X","2"))
 liga$Average = ordered(liga$Average)
+str(liga)
 cat("\014")
 
 # Obtener la tabla de frecuencias absolutas acumuladas del data frame liga.
@@ -35,7 +36,7 @@ sum(t1["1",]) # otra forma de verlo
 # Obtener la tabla de frecuencias relativas SIN ACUMULAR del data frame liga.
 # ¿Qué es más probable, que el equipo empate o que gane 1-0? ¿En qué porcentaje?
 t2=prop.table(table(liga))*100
-t2
+round(t2,2)
 
 # Obtener la tabla de frecuencias relativas ACUMULADAS del data frame liga.
 # ¿Qué es más probable, que el equipo gane o pierda?
