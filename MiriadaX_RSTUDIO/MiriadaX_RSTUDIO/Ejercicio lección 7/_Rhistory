@@ -1,0 +1,457 @@
+demo()
+setwd(~/R)
+setwd("~/R")
+installed.packages()
+library("abind", lib.loc="/usr/lib/R/site-library")
+detach("package:abind", unload=TRUE)
+?install.packages
+example("install.packages")
+atgs(library)
+args(library)
+data()
+data("CO2")
+View(CO2)
+CO2
+View(CO2)
+View(CO2)
+mtcars
+View(CO2)
+View(CO2)
+View(CO2)
+View(mtcars)
+View(CO2)
+View(CO2)
+View(mtcars)
+View(mtcars)
+View(chickwts)
+View(Indometh)
+list.files()
+load("~/R/primero.RData")
+read.csv("4ESO_Curso_2016_2017_fichero_moodle.csv")
+hola = read.csv("4ESO_Curso_2016_2017_fichero_moodle.csv")
+View(hola)
+View(hola)
+View(hola)
+View(hola)
+rm hola
+rm(hola)
+hola = read.csv("4ESO_Curso_2016_2017_fichero_moodle.csv", sep=";")
+View(hola)
+View(hola)
+rm(hola)
+read.table("4ESO_Curso_2016_2017_fichero_moodle.csv",sep=";",header=TRUE)
+hola = read.table("4ESO_Curso_2016_2017_fichero_moodle.csv",sep=";",header=TRUE)
+hola$email
+tipos = factor (hola$department)
+tipos
+levels(tipos)
+install.packages("ggplot2")
+install.packages("ggplot2")
+qplot(pesos,valor)
+library("ggplot2", lib.loc="/usr/lib/R/site-library")
+qplot(pesos,valor)
+qplot(pesos,valor,color=tipos)
+tipos=factor(cofre)
+qplot(pesos,valor,color=tipos)
+legend("topright",levels(tipos))
+legend("topright",levels(tipos),pch=1:length(levels(tipos)))
+A=matrix(c(1,2,1,3),nrow=2,byrow=TRUE)
+A
+B=matrix(c(-2,4,3,1,0,2),nrow=3,byrow = TRUE)
+B
+C=matrix(c(1,0,1,2,1,0),nrow=2,byrow=TRUE)
+C
+t(B)
+t(B)+C
+5*A
+A
+5*A
+C
+B
+C%*%B
+(C%*%B)%*%A
+A^2
+A%*%A
+a
+A
+v=c(5,6)
+A*v
+A
+A%*%v
+A=rbind(c(1,2),c(3,4))
+A
+A%*%v
+v%*%A
+v%*%v
+v
+v%*%t(v)
+A
+A=matrix(c(1,2,1,3),nrow=2,byrow=TRUE)
+A
+install.packages("Biodem")
+library("Biodem", lib.loc="~/R/i686-pc-linux-gnu-library/3.2")
+library("Biodem", lib.loc="~/R/i686-pc-linux-gnu-library/3.2")
+A=matrix(c(1,2,1,3),nrow=2,byrow=TRUE)
+mtx.exp(A,2)
+mtx.exp(A,8)
+mtx.exp(A,20)
+mtx.exp(A,-1)
+A
+B=mtx.exp(A,-1)
+A%*%B
+install.packages("expm")
+A
+C=mtx.exp(A,2)
+D=A^2
+D=A%^%2
+library("expm", lib.loc="~/R/i686-pc-linux-gnu-library/3.2")
+C
+D=A%^%2
+D
+E=A%^%(-1)
+det(A)
+det(C)
+C
+qr(A)
+qr(A)$rank
+E=qr(A)$qr
+E
+E%*%A
+solve(A)
+AINV=solve(A)
+A*AINV
+A%*%AINV
+det(A%*%AINV)
+A=matrix(c(1,6,-3,2,-1,1,1,1,-1),nrow=3,byrow=TRUE)
+A
+b=c(7,2,3)
+b
+solve(A,b)
+A=matrix(c(2,6,-8,0,6,-3,0,2,1),nrow=3,byrow=3)
+A
+A
+eigen(A)
+eigen(A)$value
+eigen(A)$vectors
+str(eigen(A))
+diag(eigen(A)$values)
+D=diag(eigen(A)$values)
+D
+P=eigen(A)$vectors
+P
+PINV=solve(P)
+PINV
+P%*%A%*%PINV
+P%*%D%*%PINV
+A
+A=matrix(c(3-2i,5+3i,1+2i,2-i),nrow=2,byrow=TRUE)
+A=matrix(c(3-2i,5+3i,1+2i,2-1i),nrow=2,byrow=TRUE)
+A
+A
+A%*%A
+expm(A,2)
+library("expm", lib.loc="~/R/i686-pc-linux-gnu-library/3.2")
+expm(A,2)
+eigen(A)
+b=c(2-1i,3)
+solve(A,b)
+det(A)
+prod(eigen(A)$values)
+HEC=as.table(apply(HairEyeColor,MARGIN = c(1,2)))
+HEC=as.table(apply(HairEyeColor,MARGIN = c(1,2)),FUN=sum)
+HEC=as.table(apply(HairEyeColor,MARGIN = c(1,2)),FUN=sum))
+HEC=as.table(apply(HairEyeColor,MARGIN = c(1,2),FUN=sum))
+HEC
+dimnames(HEC)=list(Cabello=c("Negro","Castaño","Rojo","Rubio"),Ojos=c("Marrones","Azules","Pardos","Verdes")
+)
+HEC
+sum(HEC)
+sum(colSums((HEC)))
+colSums((HEC)
+)
+rowSums(HEC)
+plot(HEC,col=c("lightblue"),main="este")
+round(prop.table(colSums(HEC)),2)
+round(prop.table(HEC),2)
+round(prop.table(HEC,margin=1),2)
+round(prop.table(HEC,margin=2),2)
+barplot(prop.table(HEC,margin=1),beside=TRUE,legend.text=TRUE,col=c("black","brown","red","gol"),ylim=c(0,0.8),main="Frecuencias")
+barplot(prop.table(HEC,margin=1),beside=TRUE,legend.text=TRUE,col=c("black","brown","red","golden"),ylim=c(0,0.8),main="Frecuencias")
+barplot(prop.table(HEC,margin=1),beside=TRUE,legend.text=TRUE,col=c("black","brown","red","gold"),ylim=c(0,0.8),main="Frecuencias")
+barplot(prop.table(HEC,margin=1),beside=TRUE,legend.text=TRUE,col=c("black","brown","red","gold"),ylim=c(0,0.8),main="Frecuencias",legend.args=c(cex=0.5))
+barplot(prop.table(HEC,margin=1),beside=TRUE,legend.text=TRUE,col=c("black","brown","red","gold"),ylim=c(0,0.8),main="Frecuencias",args.legend=list(cex=0.5))
+barplot(prop.table(HEC,margin=1),beside=TRUE,legend.text=TRUE,col=c("black","brown","red","gold"),ylim=c(0,0.8),main="Frecuencias",args.legend=list(cex=0.7,x="topleft"))
+barplot(prop.table(HEC,margin=1),beside=TRUE,legend.text=TRUE,col=c("black","brown","red","gold"),ylim=c(0,0.8),main="Frecuencias",args.legend=list(cex=0.7,x="topright"))
+barplot(prop.table(HEC,margin=1),beside=TRUE,legend.text=TRUE,col=c("black","brown","red","gold"),ylim=c(0,0.8),main="Frecuencias",args.legend=list(cex=0.8,x="topright"))
+barplot(prop.table(HEC,margin=2),beside=TRUE,legend.text=TRUE,col=c("black","brown","red","gold"),ylim=c(0,0.8),main="Frecuencias",args.legend=list(cex=0.8,x="topright"))
+barplot(prop.table(HEC, margin=1),beside=TRUE,legend.text=TRUE,col=c("black","brown","red","gold"),ylim=c(0,0.8),main="Frecuencias",args.legend=list(cex=0.8,x="topright"))
+round(prop.table(HEC,margin=1),2)
+round(prop.table(HEC,margin=2),2)
+barplot(prop.table(HEC, margin=2),beside=TRUE,legend.text=TRUE,col=c("black","brown","red","gold"),ylim=c(0,0.8),main="Frecuencias",args.legend=list(cex=0.8,x="topright"))
+barplot(prop.table(HEC, margin=1),beside=TRUE,legend.text=TRUE,col=c("black","brown","red","gold"),ylim=c(0,0.8),main="Frecuencias")
+barplot(prop.table(HEC, margin=2),beside=TRUE,legend.text=TRUE,col=c("black","brown","red","gold"),ylim=c(0,0.8),main="Frecuencias")
+barplot(t(prop.table(HEC, margin=2)),beside=TRUE,legend.text=TRUE,col=c("black","brown","red","gold"),ylim=c(0,0.8),main="Frecuencias")
+Provincia
+Especie=c("Halcón","Águila","Águila","Halcón","Hálcón")
+Sexo=c("M","M","F","F","F")
+table(Especie,Sexo)
+prop.table(table(Especie,Sexo),margin=1)
+flores = c(rep("setosa",5),rep("versicolor",7),rep("virginica",8))
+flores=factor(flores)
+str(flores)
+barplot(prop.table(table(flores)))
+prueba <- read.csv("/tmp/Rtmp8cqfqn/data12019c6539a", sep="")
+View(prueba)
+prueba
+str(prueba)
+MB=table(prueba$MB)
+MB
+names(which(MB=max(MB)))
+names(which(MB==max(MB)))
+A=c(rep("a1",4),rep("a2",7))
+B=c(rep("b1",2),rep("b2",9))
+prop.table(table(A,B))
+prop.table(table(A,B),margin=2)
+prueba2 <- read.csv("/tmp/Rtmp8cqfqn/data120156b91f86", sep="")
+View(prueba2)
+prueba2
+str(prueba2)
+NH=table(prueba2$NH)
+NH
+NH["50"]
+prop.table(NH)
+prop.table(NH["50"])
+prop.table(NH)["50"]
+round(prop.table(NH)["50"],2)
+t1=table(prueba2$NH,prueba2$Year)
+t1
+prop.table(t1,margin=1)
+prop.table(t1,margin=1)["55",]
+prop.table(t1)["55",]
+HairEyeColor
+prop.table(HairEyeColor,margin=c(1,2))
+prop.table(HairEyeColor)
+prop.table(HairEyeColor)["Red","Green"]
+prop.table(HairEyeColor)["Red","Green",]
+prueba3 <- read.csv("/tmp/Rtmp8cqfqn/data120165a6a7aa", sep="")
+View(prueba3)
+NH = prueba3
+NH
+str(NH)
+t1=table(NH$Hermanos,NH$Grado)
+barplot(prop.table(t1))
+barplot(prop.table(t1)besides=TRUE)
+barplot(prop.table(t1),besides=TRUE)
+barplot(prop.table(t1),besides=TRUE)
+barplot(prop.table(t1),besides=TRUE)
+barplot(prop.table(t1),beside=TRUE)
+barplot(prop.table(t1),beside=TRUE)
+barplot(prop.table(t1),beside=TRUE,ylim=c(0,0.5))
+barplot(prop.table(t1),beside=TRUE)
+barplot(prop.table(t1,margin=1),beside=TRUE)
+barplot(prop.table(t1,margin=2),beside=TRUE)
+t1=HairEyeColor
+prop.table(t1,margin=3)
+install.packages("MASS")
+library(MASS)
+str(birthwt)
+library(MASS)
+bwt = birthwt
+save.image("~/R/Ejercicio lección 7/datos.RData")
+low=factor(low)
+bwt$low=factor(bwt$low)
+str(bwt)
+attach(bwt)
+low = factor(low,labels=c("Más de 2.5Kg","Menos de 2.5Kg"))
+str(bwt)
+low
+detach((bwt))
+detach(bwt)
+str(bwt)
+bwt$low=factor(bwt$low,labels=c("Más de 2.5Kg","Menos de 2.5Kg"))
+str(bwt)
+bwt$race=factor(bwt$race,labels=c("blanca","negra","otra"))
+str(bwt)
+tA=table(bwt$race,bwt$low)
+tA
+save.image("~/R/Ejercicio lección 7/datos.RData")
+setwd("~/R/Ejercicio lección 7")
+tA
+rtA=prop.table(tA,margin=2)
+rtA
+rtA=round(rtA,2)
+rtA
+plot(rtA)
+library(MASS)
+bwt=birthwt
+bwt$low=factor(bwt$low,labels=c("Más de 2.5Kg","Menos de 2.5Kg"))
+bwt$race=factor(bwt$race,labels=c("blanca","negra","otra"))
+tA=table(bwt$race,bwt$low)
+tA
+rtA=round(prop.table(tA,margin=2),2)
+rtA
+plot(rtA)
+library(MASS)
+bwt=birthwt
+bwt$low=factor(bwt$low,labels=c("Más de 2.5Kg","Menos de 2.5Kg"))
+bwt$race=factor(bwt$race,labels=c("blanca","negra","otra"))
+tA=table(bwt$race,bwt$low)
+tA
+rtA=round(prop.table(tA,margin=2),2)
+rtA
+plot(rtA)
+library(MASS)
+bwt=birthwt
+bwt$low=factor(bwt$low,labels=c("Más de 2.5Kg","Menos de 2.5Kg"))
+bwt$race=factor(bwt$race,labels=c("blanca","negra","otra"))
+tA=table(bwt$race,bwt$low)
+tA
+rtA=round(prop.table(tA,margin=2),2)
+rtA
+plot(rtA)
+library(MASS)
+bwt=birthwt
+bwt$low=factor(bwt$low,labels=c("Más de 2.5Kg","Menos de 2.5Kg"))
+bwt$race=factor(bwt$race,labels=c("blanca","negra","otra"))
+tA=table(bwt$race,bwt$low)
+tA
+rtA=round(prop.table(tA,margin=2),2)
+rtA
+plot(rtA,col=c("lightblue","red4"),main="Frecuencia relativa raza - peso niño")
+library(MASS)
+bwt=birthwt
+bwt$low=factor(bwt$low,labels=c("Más de 2.5Kg","Menos de 2.5Kg"))
+bwt$race=factor(bwt$race,labels=c("blanca","negra","otra"))
+tA=table(bwt$race,bwt$low)
+tA
+rtA=round(prop.table(tA,margin=2),2)
+rtA
+plot(t(rtA),col=c("lightblue","red4"),main="Frecuencia relativa raza - peso niño")
+barplot(rtA)
+barplot(rtA,beside = TRUE)
+barplot(rtA,col=c("lightred","brown","orange"),beside = TRUE,legend.text=TRUE,args.legend = list(cex=0.8),ylim = c(0,0.5))
+barplot(rtA,col=c("red1","brown","orange"),beside = TRUE,legend.text=TRUE,args.legend = list(cex=0.8),ylim = c(0,0.5))
+barplot(rtA,col=c("red1","brown","orange"),beside = TRUE,legend.text=TRUE,args.legend = list(cex=0.8),ylim = c(0,0.6))
+barplot(rtA,col=c("red1","brown","orange"),beside = TRUE,legend.text=TRUE,args.legend = list(cex=0.8,x="center",y=0.5),ylim = c(0,0.6))
+barplot(rtA,col=c("red1","brown","orange"),beside = TRUE,legend.text=TRUE,args.legend = list(cex=0.8,x="center",y=0.7),ylim = c(0,0.6))
+barplot(rtA,col=c("red1","brown","orange"),beside = TRUE,legend.text=TRUE,args.legend = list(cex=0.8,x=1,y=0.7),ylim = c(0,0.6))
+barplot(rtA,col=c("red1","brown","orange"),beside = TRUE,legend.text=TRUE,args.legend = list(cex=0.8,x=10,y=0.7),ylim = c(0,0.6))
+barplot(rtA,col=c("red1","brown","orange"),beside = TRUE,legend.text=TRUE,args.legend = list(cex=0.8,x=5,y=0.7),ylim = c(0,0.6))
+barplot(t(rtA),col=c("red1","brown","orange"),beside = TRUE,legend.text=TRUE,args.legend = list(cex=0.8,x=5,y=0.7),ylim = c(0,0.6))
+barplot(rtA,col=c("red1","brown","orange"),beside = TRUE,legend.text=TRUE,args.legend = list(cex=0.8,x=5,y=0.7),ylim = c(0,0.6))
+library(MASS)
+bwt=birthwt
+bwt$low=factor(bwt$low,labels=c("Más de 2.5Kg","Menos de 2.5Kg"))
+bwt$race=factor(bwt$race,labels=c("blanca","negra","otra"))
+tA=table(bwt$race,bwt$low)
+tA
+rtA=round(prop.table(tA,margin=2),2)
+rtA
+plot(t(rtA),col=c("lightblue","red4"),main="Frecuencia relativa raza - peso niño")
+barplot(rtA,col=c("red1","brown","orange"),beside = TRUE,legend.text=TRUE,args.legend = list(cex=0.8,x=5,y=0.7),ylim = c(0,0.6))
+bwt$race=factor(bwt$race,labels=c("blanca","negra","otra"))
+library(MASS)
+bwt=birthwt
+bwt$low=factor(bwt$low,labels=c("Más de 2.5Kg","Menos de 2.5Kg"))
+bwt$race=factor(bwt$race,labels=c("blanca","negra","otra"))
+tA=t(table(bwt$race,bwt$low))
+tA
+rtA=round(prop.table(tA,margin=2),2)
+rtA
+plot(t(rtA),col=c("lightblue","red4"),main="Frecuencia relativa raza - peso niño")
+barplot(rtA,col=c("red1","brown","orange"),beside = TRUE,legend.text=TRUE,args.legend = list(cex=0.8,x=5,y=0.7),ylim = c(0,0.6))
+library(MASS)
+bwt=birthwt
+bwt$low=factor(bwt$low,labels=c("Más de 2.5Kg","Menos de 2.5Kg"))
+bwt$race=factor(bwt$race,labels=c("blanca","negra","otra"))
+tA=t(table(bwt$race,bwt$low))
+tA
+rtA=round(prop.table(tA,margin=2),2)
+rtA
+plot(t(rtA),col=c("lightblue","red4"),main="Frecuencia relativa raza - peso niño")
+barplot(rtA,col=c("red1","brown","orange"),beside = TRUE,legend.text=TRUE,args.legend = list(cex=0.8,x=5,y=0.7),ylim = c(0,0.6))
+library(MASS)
+bwt=birthwt
+bwt$low=factor(bwt$low,labels=c("Más de 2.5Kg","Menos de 2.5Kg"))
+bwt$race=factor(bwt$race,labels=c("blanca","negra","otra"))
+tA=table(bwt$low,bwt$race)
+tA
+rtA=round(prop.table(tA,margin=2),2)
+rtA
+plot(t(rtA),col=c("red1","brown","orange"),main="Frecuencia relativa raza - peso niño")
+barplot(rtA,col=c("red1","brown"),beside = TRUE,legend.text=TRUE,args.legend = list(cex=0.8,x=5,y=0.7),ylim = c(0,0.6))
+library(MASS)
+bwt=birthwt
+bwt$low=factor(bwt$low,labels=c("Más de 2.5Kg","Menos de 2.5Kg"))
+bwt$race=factor(bwt$race,labels=c("blanca","negra","otra"))
+tA=table(bwt$low,bwt$race)
+tA
+rtA=round(prop.table(tA,margin=2),2)
+rtA
+plot(t(rtA),col=c("red1","brown","orange"),main="Frecuencia relativa raza - peso niño")
+barplot(rtA,col=c("red1","brown"),beside = TRUE,legend.text=TRUE,args.legend = list(cex=0.8,x=5,y=0.7),ylim = c(0,1))
+library(MASS)
+bwt=birthwt
+bwt$low=factor(bwt$low,labels=c("Más de 2.5Kg","Menos de 2.5Kg"))
+bwt$race=factor(bwt$race,labels=c("blanca","negra","otra"))
+tA=table(bwt$low,bwt$race)
+tA
+rtA=round(prop.table(tA,margin=2),2)
+rtA
+plot(t(rtA),col=c("red1","brown","orange"),main="Frecuencia relativa raza - peso niño")
+barplot(rtA,col=c("red1","brown"),beside = TRUE,legend.text=TRUE,args.legend = list(cex=0.8,x=5,y=1),ylim = c(0,1))
+rtA
+str(btw)
+str(btw)
+str(bwt)
+bwt$smoke=factor(bwt$smoke,labels=c("No","Sí"))
+str(bwt)
+bwt$ht=factor(bwt$ht,labels=c("No","Sí"))
+library(MASS)
+bwt=birthwt
+bwt$low=factor(bwt$low,labels=c("Más de 2.5Kg","Menos de 2.5Kg"))
+# bwt$race=factor(bwt$race,labels=c("blanca","negra","otra"))
+bwt$smoke=factor(bwt$smoke,labels=c("No","Sí"))
+bwt$ht=factor(bwt$ht,labels=c("No","Sí"))
+tB1=table(bwt$low,bwt$smoke)
+tB2=table(bwt$low,bwt$ht)
+tB1
+tB2
+rtB1=round(prop.table(tB1,margin=2),2)
+rtB2=round(prop.table(tB1,margin=2),2)
+rtB1
+rtB2
+# plot(t(rtA),col=c("red1","brown","orange"),main="Frecuencia relativa raza - peso niño")
+# barplot(rtA,col=c("red1","brown"),beside = TRUE,legend.text=TRUE,args.legend = list(cex=0.8,x=5,y=1),ylim = c(0,1))
+library(MASS)
+bwt=birthwt
+bwt$low=factor(bwt$low,labels=c("Más de 2.5Kg","Menos de 2.5Kg"))
+# bwt$race=factor(bwt$race,labels=c("blanca","negra","otra"))
+bwt$smoke=factor(bwt$smoke,labels=c("No","Sí"))
+bwt$ht=factor(bwt$ht,labels=c("No","Sí"))
+tB1=table(bwt$low,bwt$smoke)
+tB2=table(bwt$low,bwt$ht)
+tB1
+tB2
+rtB1=round(prop.table(tB1,margin=2),2)
+rtB2=round(prop.table(tB2,margin=2),2)
+rtB1
+rtB2
+# plot(t(rtA),col=c("red1","brown","orange"),main="Frecuencia relativa raza - peso niño")
+# barplot(rtA,col=c("red1","brown"),beside = TRUE,legend.text=TRUE,args.legend = list(cex=0.8,x=5,y=1),ylim = c(0,1))
+library(MASS)
+bwt=birthwt
+bwt$low=factor(bwt$low,labels=c("Más de 2.5Kg","Menos de 2.5Kg"))
+# bwt$race=factor(bwt$race,labels=c("blanca","negra","otra"))
+bwt$smoke=factor(bwt$smoke,labels=c("No","Sí"))
+bwt$ht=factor(bwt$ht,labels=c("No","Sí"))
+tB1=table(bwt$low,bwt$smoke)
+tB2=table(bwt$low,bwt$ht)
+tB1
+tB2
+rtB1=round(prop.table(tB1,margin=2),2)
+rtB2=round(prop.table(tB2,margin=2),2)
+ftable(rtB1)
+ftable(rtB2)
+# plot(t(rtA),col=c("red1","brown","orange"),main="Frecuencia relativa raza - peso niño")
+# barplot(rtA,col=c("red1","brown"),beside = TRUE,legend.text=TRUE,args.legend = list(cex=0.8,x=5,y=1),ylim = c(0,1))

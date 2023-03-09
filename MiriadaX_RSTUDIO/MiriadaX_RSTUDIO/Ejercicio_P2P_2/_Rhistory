@@ -1,0 +1,512 @@
+a1$Grado.nutrición.francés=droplevels(a1$Grado.nutrición.francés)
+a1$Continentes = factor(a1$Continentes,labels=continentes2)
+str(a1)
+table(a1)
+tfrec = round(prop.table(table(a1),margin=1)*100,1)
+tfrec
+# barplot(t(tfrec),beside=TRUE,legend.text=TRUE)
+bp = barplot(t(tfrec),col=brewer.pal(5,"GnBu")
+,main="Porcentaje de cada grado de nutrición"
+,beside = TRUE,legend.text=TRUE, ylab="Porcentajes"
+,args.legend = list("topright",cex=0.9)
+,ylim = c(0,40))
+text(bp, t(tfrec)-2, paste0(t(tfrec),"%")
+,cex=0.8, srt=90, font=2)
+View(DFU_G)
+DFU_G_sin=DFU_G[!(DFU_G$nutrition_grade_fr==""),]
+save.image("~/R/Ejercicio_P2P_2/Datos.RData")
+cat("\014") # Borrar consola
+library(RColorBrewer)
+DFU_G_sin=DFU_G[!(DFU_G$nutrition_grade_fr==""),]
+DFU_G_sin$nutrition_grade_fr=droplevels(DFU_G_sin$nutrition_grade_fr)
+str(DFU_G_sin)
+antiguo.par=par()
+par(mar=c(4,8,4,8))
+b1 = boxplot(sugars~nutrition_grade_fr, data=DFU_G_sin, horizontal=TRUE,
+main="Azúcar por grado de nutrición", xlab="Gramos por cada 100",
+las=1,col=brewer.pal(6,"Paired"))
+par=antiguo.par
+View(DFU_G_sin)
+cat("\014") # Borrar consola
+library(RColorBrewer)
+DFU_G_sin=DFU_G[!(DFU_G$nutrition_grade_fr==""),-1]
+DFU_G_sin$nutrition_grade_fr=droplevels(DFU_G_sin$nutrition_grade_fr)
+str(DFU_G_sin)
+antiguo.par=par()
+par(mar=c(4,8,4,8))
+b1 = boxplot(sugars~nutrition_grade_fr, data=DFU_G_sin, horizontal=TRUE,
+main="Azúcar por grado de nutrición", xlab="Gramos por cada 100",
+las=1,col=brewer.pal(6,"Paired"))
+par=antiguo.par
+install.packages("tufte")
+View(DF_G)
+View(DFU_G)
+cat("\014") # Borrar consola
+DFU_G_NA=DFU_G[,c(5,12)]
+str(DFU_G_NA)
+cat("\014") # Borrar consola
+DFU_G_NA=DFU_G[,5:12]
+str(DFU_G_NA)
+cat("\014") # Borrar consola
+DFU_G_NA=DFU_G[,c(1,5:12)]
+str(DFU_G_NA)
+a1=aggregate()
+cat("\014") # Borrar consola
+DFU_G_NA=DFU_G[,5:12]
+str(DFU_G_NA)
+a1=sapply(DFU_G_NA,FUN=is.na)
+a1
+cat("\014") # Borrar consola
+DFU_G_NA=DFU_G[,5:12]
+str(DFU_G_NA)
+a1=sapply(DFU_G_NA,FUN=is.na)
+head(a1)
+cat("\014") # Borrar consola
+DFU_G_NA=DFU_G[,5:12]
+str(DFU_G_NA)
+a1=sum(sapply(DFU_G_NA,FUN=is.na))
+a1
+cat("\014") # Borrar consola
+DFU_G_NA=DFU_G[,5:12]
+str(DFU_G_NA)
+a1=sapply(DFU_G_NA,FUN=is.na)
+table(a1)
+cat("\014") # Borrar consola
+DFU_G_NA=DFU_G[,5:12]
+str(DFU_G_NA)
+a1=sapply(DFU_G_NA,FUN=is.na)
+table(a1,margin=2)
+cat("\014") # Borrar consola
+DFU_G_NA=DFU_G[,5:12]
+str(DFU_G_NA)
+a1=sapply(DFU_G_NA,FUN=is.na)
+a2=sum(is.na(DFU_G_NA))
+a2
+cat("\014") # Borrar consola
+DFU_G_NA=DFU_G[,5:12]
+str(DFU_G_NA)
+a1=sapply(DFU_G_NA,margin=2,FUN=is.na)
+cat("\014") # Borrar consola
+DFU_G_NA=DFU_G[,5:12]
+str(DFU_G_NA)
+a1=sapply(DFU_G_NA, MARGIN=2, FUN=is.na)
+cat("\014") # Borrar consola
+DFU_G_NA=DFU_G[,5:12]
+str(DFU_G_NA)
+a1=sapply(DFU_G_NA, function(x) sum(is.na(x)))
+a1
+cat("\014") # Borrar consola
+DFU_G_NA=DFU_G[,5:12]
+str(DFU_G_NA)
+a1=sapply(DFU_G_NA, function(x) sum(is.na(x)))
+a2=sapply(DFU_G_NA, function(x) sum(!is.na(x)))
+cat("\014") # Borrar consola
+DFU_G_NA=DFU_G[,5:12]
+str(DFU_G_NA)
+a1=sapply(DFU_G_NA, function(x) sum(is.na(x)))
+a2=sapply(DFU_G_NA, function(x) sum(!is.na(x)))
+a1
+a2
+cat("\014") # Borrar consola
+DFU_G_NA=DFU_G[,5:12]
+str(DFU_G_NA)
+a1=sapply(DFU_G_NA, function(x) sum(is.na(x)))
+a2=sapply(DFU_G_NA, function(x) sum(!is.na(x)))
+a1
+a2
+a1+a2
+cat("\014") # Borrar consola
+DFU_G_NA=DFU_G[,5:12]
+str(DFU_G_NA)
+a1=sapply(DFU_G_NA, function(x) sum(is.na(x)))
+a2=sapply(DFU_G_NA, function(x) sum(!is.na(x)))
+a1
+a2
+cat("\014") # Borrar consola
+a1=sapply(DFU_G[,5:12], function(x) sum(is.na(x)))
+a2=sapply(DFU_G[,5:12], function(x) sum(!is.na(x)))
+DFU_G_NA=data.frame(cbind(colnames(DFU_G[,5:12]),NonAv=a1,Av=a2))
+DFU_G_NA
+cat("\014") # Borrar consola
+a1=sapply(DFU_G[,5:12], function(x) sum(is.na(x)))
+a2=sapply(DFU_G[,5:12], function(x) sum(!is.na(x)))
+DFU_G_NA=data.frame(NonAv=a1,Av=a2))
+cat("\014") # Borrar consola
+a1=sapply(DFU_G[,5:12], function(x) sum(is.na(x)))
+a2=sapply(DFU_G[,5:12], function(x) sum(!is.na(x)))
+DFU_G_NA=data.frame(NonAv=a1,Av=a2)
+DFU_G_NA
+cat("\014") # Borrar consola
+a1=sapply(DFU_G[,5:12], function(x) sum(is.na(x)))
+a2=sapply(DFU_G[,5:12], function(x) sum(!is.na(x)))
+n=dim(DFU_G[,5:12])[1]
+DFU_G_NA=data.frame(NonAv=a1,Av=a2)
+DFU_G_NA$PorNonAv=round(100*DFU_G_NA$NonAv/n,2)
+DFU_G_NA$PorAv=round(100*DFU_G_NA$Av/n,2)
+DFU_G_NA
+cat("\014") # Borrar consola
+a1=sapply(DFU_G[,5:12], function(x) sum(is.na(x)))
+a2=sapply(DFU_G[,5:12], function(x) sum(!is.na(x)))
+n=dim(DFU_G[,5:12])[1]
+DFU_G_NA=data.frame(NonAv=a1,Av=a2)
+DFU_G_NA$PorNonAv=paste0(round(100*DFU_G_NA$NonAv/n,2),"%")
+DFU_G_NA$PorAv=paste0(round(100*DFU_G_NA$Av/n,2),"%")
+DFU_G_NA
+cat("\014") # Borrar consola
+fNonAv(x) = function(x) sum(!(is.na(x)))
+fAv(x) = function(x) sum(is.na(x))
+a1=sapply(DFU_G[,5:12], FUN=fNonAv)
+a2=sapply(DFU_G[,5:12], FUN=fAv)
+n=dim(DFU_G[,5:12])[1]
+DFU_G_NA=data.frame(NonAv=a1,Av=a2)
+DFU_G_NA$PorNonAv=paste0(round(100*DFU_G_NA$NonAv/n,2),"%")
+DFU_G_NA$PorAv=paste0(round(100*DFU_G_NA$Av/n,2),"%")
+DFU_G_NA
+cat("\014") # Borrar consola
+fNonAv(x) = function(x) sum(!(is.na(x)))
+fAv(x) = function(x) sum(is.na(x))
+a1=sapply(DFU_G[,5:12], FUN=fNonAv)
+a2=sapply(DFU_G[,5:12], FUN=fAv)
+n=dim(DFU_G[,5:12])[1]
+DFU_G_NA=data.frame(NonAv=a1,Av=a2)
+DFU_G_NA$PorNonAv=paste0(round(100*DFU_G_NA$NonAv/n,2),"%")
+DFU_G_NA$PorAv=paste0(round(100*DFU_G_NA$Av/n,2),"%")
+DFU_G_NA
+cat("\014") # Borrar consola
+fNonAv(x) = function(x) sum(!(is.na(x)))
+fAv(x) = function(x) sum(is.na(x))
+a1=sapply(DFU_G[,5:12], FUN=fNonAv)
+a2=sapply(DFU_G[,5:12], FUN=fAv)
+n=dim(DFU_G[,5:12])[1]
+DFU_G_NA=data.frame(NonAv=a1,Av=a2)
+DFU_G_NA$PorNonAv=paste0(round(100*DFU_G_NA$NonAv/n,2),"%")
+DFU_G_NA$PorAv=paste0(round(100*DFU_G_NA$Av/n,2),"%")
+DFU_G_NA
+cat("\014") # Borrar consola
+fNonAv(x)={sum(!(is.na(x)))}
+fAv(x)={sum(is.na(x))}
+a1=sapply(DFU_G[,5:12], FUN=fNonAv)
+a2=sapply(DFU_G[,5:12], FUN=fAv)
+n=dim(DFU_G[,5:12])[1]
+DFU_G_NA=data.frame(NonAv=a1,Av=a2)
+DFU_G_NA$PorNonAv=paste0(round(100*DFU_G_NA$NonAv/n,2),"%")
+DFU_G_NA$PorAv=paste0(round(100*DFU_G_NA$Av/n,2),"%")
+DFU_G_NA
+cat("\014") # Borrar consola
+fNonAv(x){sum(!(is.na(x)))}
+fAv(x){sum(is.na(x))}
+a1=sapply(DFU_G[,5:12], FUN=fNonAv)
+a2=sapply(DFU_G[,5:12], FUN=fAv)
+n=dim(DFU_G[,5:12])[1]
+DFU_G_NA=data.frame(NonAv=a1,Av=a2)
+DFU_G_NA$PorNonAv=paste0(round(100*DFU_G_NA$NonAv/n,2),"%")
+DFU_G_NA$PorAv=paste0(round(100*DFU_G_NA$Av/n,2),"%")
+DFU_G_NA
+cat("\014") # Borrar consola
+fNonAv=function(x){sum(!(is.na(x)))}
+fAv=function(x){sum(is.na(x))}
+a1=sapply(DFU_G[,5:12], FUN=fNonAv)
+a2=sapply(DFU_G[,5:12], FUN=fAv)
+n=dim(DFU_G[,5:12])[1]
+DFU_G_NA=data.frame(NonAv=a1,Av=a2)
+DFU_G_NA$PorNonAv=paste0(round(100*DFU_G_NA$NonAv/n,2),"%")
+DFU_G_NA$PorAv=paste0(round(100*DFU_G_NA$Av/n,2),"%")
+DFU_G_NA
+cat("\014") # Borrar consola
+fNonAv=function(x){sum(is.na(x))}
+fAv=function(x){sum(!is.na(x))}
+a1=sapply(DFU_G[,5:12], FUN=fNonAv)
+a2=sapply(DFU_G[,5:12], FUN=fAv)
+n=dim(DFU_G[,5:12])[1]
+DFU_G_NA=data.frame(NonAv=a1,Av=a2)
+DFU_G_NA$PorNonAv=paste0(round(100*DFU_G_NA$NonAv/n,2),"%")
+DFU_G_NA$PorAv=paste0(round(100*DFU_G_NA$Av/n,2),"%")
+DFU_G_NA
+cat("\014") # Borrar consola
+# data frame con datos de vitamina B6
+# Que tienen algún valor
+DFU_G_vitaminaB6=DFU_G[!is.na(DFU_G$vitamin_b6),c(1,12)]
+# paso a miligramos
+DFU_G_vitaminaB6$vitamin_b6 = round(DFU_G_vitaminaB6$vitamin_b6*1000,3)
+# Encontrar el producto que especifica el problema
+library("dplyr") # cargo la biblioteca
+a1=filter(DFU_G_vitaminaB6,vitamin_b6 == 0.2100, grepl('Actimel', product_name))
+a1
+# grepl retorna un vector lógico (todo a TRUE o FALSE) si encuentra la cadena
+# dada en él.
+VB6=DFU_G_vitaminaB6$vitamin_b6
+summary(VB6)
+tVB6.fabs=table(VB6)
+tVB6.frel=prop.table(tVB6.fabs)
+tVB6.frel.acu=cumsum(tVB6.frel)
+# tVB6.frel.acu
+DF_VB6_Frecuencias=data.frame(CantidadVB6=rownames(tVB6.fabs)
+,fabs=as.numeric(tVB6.fabs)
+,frel=as.numeric(tVB6.frel)
+,frel.acu=as.numeric(tVB6.frel.acu))
+DF_VB6_Frecuencias
+str(DF_VB6_Frecuencias)
+por0.21=DF_VB6_Frecuencias[DF_VB6_Frecuencias$CantidadVB6=="0.21",]$frel.acu
+por0.21
+indice0.21=which(DF_VB6_Frecuencias$CantidadVB6=="0.21")
+indice0.21
+porMenos0.21=DF_VB6_Frecuencias[indice0.21-1,]$frel.acu
+porMenos0.21
+porMasOIgual0.21=1-porMenos0.21
+porMasOIgual0.21
+# otra forma
+sum(DF_VB6_Frecuencias[indice0.21:dim(DF_VB6_Frecuencias)[1],]$frel)
+# Encontrar los 5 productos con mayor vitamina B6
+head(arrange(DFU_G_vitaminaB6,desc(vitamin_b6))[,c(1,12)],5)
+cat("\014") # Borrar consola
+# data frame con datos de vitamina B6
+# Que tienen algún valor
+DFU_G_vitaminaB6=DFU_G[!is.na(DFU_G$vitamin_b6),c(1,12)]
+# paso a miligramos
+DFU_G_vitaminaB6$vitamin_b6 = round(DFU_G_vitaminaB6$vitamin_b6*1000,3)
+# Encontrar el producto que especifica el problema
+library("dplyr") # cargo la biblioteca
+a1=filter(DFU_G_vitaminaB6,vitamin_b6 == 0.2100, grepl('Actimel', product_name))
+a1
+# grepl retorna un vector lógico (todo a TRUE o FALSE) si encuentra la cadena
+# dada en él.
+VB6=DFU_G_vitaminaB6$vitamin_b6
+summary(VB6)
+tVB6.fabs=table(VB6)
+tVB6.frel=prop.table(tVB6.fabs)
+tVB6.frel.acu=cumsum(tVB6.frel)
+# tVB6.frel.acu
+DF_VB6_Frecuencias=data.frame(CantidadVB6=rownames(tVB6.fabs)
+,fabs=as.numeric(tVB6.fabs)
+,frel=as.numeric(tVB6.frel)
+,frel.acu=as.numeric(tVB6.frel.acu))
+DF_VB6_Frecuencias
+str(DF_VB6_Frecuencias)
+por0.21=DF_VB6_Frecuencias[DF_VB6_Frecuencias$CantidadVB6=="0.21",]$frel.acu
+por0.21
+indice0.21=which(DF_VB6_Frecuencias$CantidadVB6=="0.21")
+indice0.21
+porMenos0.21=DF_VB6_Frecuencias[indice0.21-1,]$frel.acu
+porMenos0.21
+porMasOIgual0.21=1-porMenos0.21
+porMasOIgual0.21
+# otra forma
+sum(DF_VB6_Frecuencias[indice0.21:dim(DF_VB6_Frecuencias)[1],]$frel)
+# Encontrar los 5 productos con mayor vitamina B6
+head(DFU_G_vitaminaB6,5)
+cat("\014") # Borrar consola
+# data frame con datos de vitamina B6
+# Que tienen algún valor
+DFU_G_vitaminaB6=DFU_G[!is.na(DFU_G$vitamin_b6),c(1,12)]
+# paso a miligramos
+DFU_G_vitaminaB6$vitamin_b6 = round(DFU_G_vitaminaB6$vitamin_b6*1000,3)
+# Encontrar el producto que especifica el problema
+library("dplyr") # cargo la biblioteca
+a1=filter(DFU_G_vitaminaB6,vitamin_b6 == 0.2100, grepl('Actimel', product_name))
+a1
+# grepl retorna un vector lógico (todo a TRUE o FALSE) si encuentra la cadena
+# dada en él.
+VB6=DFU_G_vitaminaB6$vitamin_b6
+summary(VB6)
+tVB6.fabs=table(VB6)
+tVB6.frel=prop.table(tVB6.fabs)
+tVB6.frel.acu=cumsum(tVB6.frel)
+# tVB6.frel.acu
+DF_VB6_Frecuencias=data.frame(CantidadVB6=rownames(tVB6.fabs)
+,fabs=as.numeric(tVB6.fabs)
+,frel=as.numeric(tVB6.frel)
+,frel.acu=as.numeric(tVB6.frel.acu))
+DF_VB6_Frecuencias
+str(DF_VB6_Frecuencias)
+por0.21=DF_VB6_Frecuencias[DF_VB6_Frecuencias$CantidadVB6=="0.21",]$frel.acu
+por0.21
+indice0.21=which(DF_VB6_Frecuencias$CantidadVB6=="0.21")
+indice0.21
+porMenos0.21=DF_VB6_Frecuencias[indice0.21-1,]$frel.acu
+porMenos0.21
+porMasOIgual0.21=1-porMenos0.21
+porMasOIgual0.21
+# otra forma
+sum(DF_VB6_Frecuencias[indice0.21:dim(DF_VB6_Frecuencias)[1],]$frel)
+# Encontrar los 5 productos con mayor vitamina B6
+head(arrange(DFU_G_vitaminaB6,desc(DFU_G_vitaminaB6$vitamin_b6)),5)
+cat("\014") # Borrar consola
+# data frame con datos de vitamina B6
+# Que tienen algún valor
+DFU_G_vitaminaB6=DFU_G[!is.na(DFU_G$vitamin_b6),c(1,12)]
+# paso a miligramos
+DFU_G_vitaminaB6$vitamin_b6 = round(DFU_G_vitaminaB6$vitamin_b6*1000,3)
+# Encontrar el producto que especifica el problema
+library("dplyr") # cargo la biblioteca
+a1=filter(DFU_G_vitaminaB6,vitamin_b6 == 0.2100, grepl('Actimel', product_name))
+a1
+# grepl retorna un vector lógico (todo a TRUE o FALSE) si encuentra la cadena
+# dada en él.
+VB6=DFU_G_vitaminaB6$vitamin_b6
+summary(VB6)
+tVB6.fabs=table(VB6)
+tVB6.frel=prop.table(tVB6.fabs)
+tVB6.frel.acu=cumsum(tVB6.frel)
+# tVB6.frel.acu
+DF_VB6_Frecuencias=data.frame(CantidadVB6=rownames(tVB6.fabs)
+,fabs=as.numeric(tVB6.fabs)
+,frel=as.numeric(tVB6.frel)
+,frel.acu=as.numeric(tVB6.frel.acu))
+DF_VB6_Frecuencias
+str(DF_VB6_Frecuencias)
+por0.21=DF_VB6_Frecuencias[DF_VB6_Frecuencias$CantidadVB6=="0.21",]$frel.acu
+por0.21
+indice0.21=which(DF_VB6_Frecuencias$CantidadVB6=="0.21")
+indice0.21
+porMenos0.21=DF_VB6_Frecuencias[indice0.21-1,]$frel.acu
+porMenos0.21
+porMasOIgual0.21=1-porMenos0.21
+porMasOIgual0.21
+# otra forma
+sum(DF_VB6_Frecuencias[indice0.21:dim(DF_VB6_Frecuencias)[1],]$frel)
+# Encontrar los 5 productos con mayor vitamina B6
+arrange(DFU_G_vitaminaB6,desc(DFU_G_vitaminaB6$vitamin_b6))
+cat("\014") # Borrar consola
+# data frame con datos de vitamina B6
+# Que tienen algún valor
+DFU_G_vitaminaB6=DFU_G[!is.na(DFU_G$vitamin_b6),c(1,12)]
+# paso a miligramos
+DFU_G_vitaminaB6$vitamin_b6 = round(DFU_G_vitaminaB6$vitamin_b6*1000,3)
+# Encontrar el producto que especifica el problema
+library("dplyr") # cargo la biblioteca
+a1=filter(DFU_G_vitaminaB6,vitamin_b6 == 0.2100, grepl('Actimel', product_name))
+a1
+# grepl retorna un vector lógico (todo a TRUE o FALSE) si encuentra la cadena
+# dada en él.
+VB6=DFU_G_vitaminaB6$vitamin_b6
+summary(VB6)
+tVB6.fabs=table(VB6)
+tVB6.frel=prop.table(tVB6.fabs)
+tVB6.frel.acu=cumsum(tVB6.frel)
+# tVB6.frel.acu
+DF_VB6_Frecuencias=data.frame(CantidadVB6=rownames(tVB6.fabs)
+,fabs=as.numeric(tVB6.fabs)
+,frel=as.numeric(tVB6.frel)
+,frel.acu=as.numeric(tVB6.frel.acu))
+DF_VB6_Frecuencias
+str(DF_VB6_Frecuencias)
+por0.21=DF_VB6_Frecuencias[DF_VB6_Frecuencias$CantidadVB6=="0.21",]$frel.acu
+por0.21
+indice0.21=which(DF_VB6_Frecuencias$CantidadVB6=="0.21")
+indice0.21
+porMenos0.21=DF_VB6_Frecuencias[indice0.21-1,]$frel.acu
+porMenos0.21
+porMasOIgual0.21=1-porMenos0.21
+porMasOIgual0.21
+# otra forma
+sum(DF_VB6_Frecuencias[indice0.21:dim(DF_VB6_Frecuencias)[1],]$frel)
+# Encontrar los 5 productos con mayor vitamina B6
+arrange(DFU_G_vitaminaB6,DFU_G_vitaminaB6$vitamin_b6)
+cat("\014") # Borrar consola
+# data frame con datos de vitamina B6
+# Que tienen algún valor
+DFU_G_vitaminaB6=DFU_G[!is.na(DFU_G$vitamin_b6),c(1,12)]
+# paso a miligramos
+DFU_G_vitaminaB6$vitamin_b6 = round(DFU_G_vitaminaB6$vitamin_b6*1000,3)
+# Encontrar el producto que especifica el problema
+library("dplyr") # cargo la biblioteca
+a1=filter(DFU_G_vitaminaB6,vitamin_b6 == 0.2100, grepl('Actimel', product_name))
+a1
+# grepl retorna un vector lógico (todo a TRUE o FALSE) si encuentra la cadena
+# dada en él.
+VB6=DFU_G_vitaminaB6$vitamin_b6
+summary(VB6)
+tVB6.fabs=table(VB6)
+tVB6.frel=prop.table(tVB6.fabs)
+tVB6.frel.acu=cumsum(tVB6.frel)
+# tVB6.frel.acu
+DF_VB6_Frecuencias=data.frame(CantidadVB6=rownames(tVB6.fabs)
+,fabs=as.numeric(tVB6.fabs)
+,frel=as.numeric(tVB6.frel)
+,frel.acu=as.numeric(tVB6.frel.acu))
+DF_VB6_Frecuencias
+str(DF_VB6_Frecuencias)
+por0.21=DF_VB6_Frecuencias[DF_VB6_Frecuencias$CantidadVB6=="0.21",]$frel.acu
+por0.21
+indice0.21=which(DF_VB6_Frecuencias$CantidadVB6=="0.21")
+indice0.21
+porMenos0.21=DF_VB6_Frecuencias[indice0.21-1,]$frel.acu
+porMenos0.21
+porMasOIgual0.21=1-porMenos0.21
+porMasOIgual0.21
+# otra forma
+sum(DF_VB6_Frecuencias[indice0.21:dim(DF_VB6_Frecuencias)[1],]$frel)
+# Encontrar los 5 productos con mayor vitamina B6
+arrange(DFU_G_vitaminaB6,vitamin_b6)
+cat("\014") # Borrar consola
+# data frame con datos de vitamina B6
+# Que tienen algún valor
+DFU_G_vitaminaB6=DFU_G[!is.na(DFU_G$vitamin_b6),c(1,12)]
+# paso a miligramos
+DFU_G_vitaminaB6$vitamin_b6 = round(DFU_G_vitaminaB6$vitamin_b6*1000,3)
+# Encontrar el producto que especifica el problema
+library("dplyr") # cargo la biblioteca
+a1=filter(DFU_G_vitaminaB6,vitamin_b6 == 0.2100, grepl('Actimel', product_name))
+a1
+# grepl retorna un vector lógico (todo a TRUE o FALSE) si encuentra la cadena
+# dada en él.
+VB6=DFU_G_vitaminaB6$vitamin_b6
+summary(VB6)
+tVB6.fabs=table(VB6)
+tVB6.frel=prop.table(tVB6.fabs)
+tVB6.frel.acu=cumsum(tVB6.frel)
+# tVB6.frel.acu
+DF_VB6_Frecuencias=data.frame(CantidadVB6=rownames(tVB6.fabs)
+,fabs=as.numeric(tVB6.fabs)
+,frel=as.numeric(tVB6.frel)
+,frel.acu=as.numeric(tVB6.frel.acu))
+DF_VB6_Frecuencias
+str(DF_VB6_Frecuencias)
+por0.21=DF_VB6_Frecuencias[DF_VB6_Frecuencias$CantidadVB6=="0.21",]$frel.acu
+por0.21
+indice0.21=which(DF_VB6_Frecuencias$CantidadVB6=="0.21")
+indice0.21
+porMenos0.21=DF_VB6_Frecuencias[indice0.21-1,]$frel.acu
+porMenos0.21
+porMasOIgual0.21=1-porMenos0.21
+porMasOIgual0.21
+# otra forma
+sum(DF_VB6_Frecuencias[indice0.21:dim(DF_VB6_Frecuencias)[1],]$frel)
+# Encontrar los 5 productos con mayor vitamina B6
+arrange(DFU_G_vitaminaB6,desc(vitamin_b6))
+cat("\014") # Borrar consola
+# data frame con datos de vitamina B6
+# Que tienen algún valor
+DFU_G_vitaminaB6=DFU_G[!is.na(DFU_G$vitamin_b6),c(1,12)]
+# paso a miligramos
+DFU_G_vitaminaB6$vitamin_b6 = round(DFU_G_vitaminaB6$vitamin_b6*1000,3)
+# Encontrar el producto que especifica el problema
+library("dplyr") # cargo la biblioteca
+a1=filter(DFU_G_vitaminaB6,vitamin_b6 == 0.2100, grepl('Actimel', product_name))
+a1
+# grepl retorna un vector lógico (todo a TRUE o FALSE) si encuentra la cadena
+# dada en él.
+VB6=DFU_G_vitaminaB6$vitamin_b6
+summary(VB6)
+tVB6.fabs=table(VB6)
+tVB6.frel=prop.table(tVB6.fabs)
+tVB6.frel.acu=cumsum(tVB6.frel)
+# tVB6.frel.acu
+DF_VB6_Frecuencias=data.frame(CantidadVB6=rownames(tVB6.fabs)
+,fabs=as.numeric(tVB6.fabs)
+,frel=as.numeric(tVB6.frel)
+,frel.acu=as.numeric(tVB6.frel.acu))
+DF_VB6_Frecuencias
+str(DF_VB6_Frecuencias)
+por0.21=DF_VB6_Frecuencias[DF_VB6_Frecuencias$CantidadVB6=="0.21",]$frel.acu
+por0.21
+indice0.21=which(DF_VB6_Frecuencias$CantidadVB6=="0.21")
+indice0.21
+porMenos0.21=DF_VB6_Frecuencias[indice0.21-1,]$frel.acu
+porMenos0.21
+porMasOIgual0.21=1-porMenos0.21
+porMasOIgual0.21
+# otra forma
+sum(DF_VB6_Frecuencias[indice0.21:dim(DF_VB6_Frecuencias)[1],]$frel)
+# Encontrar los 5 productos con mayor vitamina B6
+head(arrange(DFU_G_vitaminaB6,desc(vitamin_b6)),5)
