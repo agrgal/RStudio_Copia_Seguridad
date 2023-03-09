@@ -32,7 +32,7 @@ sum(casa0)#Hay un 16,6% que marque 0 goles el equipo de casa
 vis0=prop.table(cas0t1)["0",]*100
 vis0
 sum(vis0)#Hay un 16,7% que marque 0 goles el equipo visitante
-barplot(casa0, col=c("white","black"),ylim=c(0,3),main="Resultados con 0 goles en casa", ylab
+barplot(casa0, col=topo.colors(length(casa0)),ylim=c(0,3),main="Resultados con 0 goles en casa", ylab
         ="Frecuencia Relativa")
 ganadosCasa = dim(Partidos[Partidos$Casa>Partidos$Visitante,])[1]/dim(Partidos)[1]*100#43%
 ganadosVis = dim(Partidos[Partidos$Casa<Partidos$Visitante,])[1]/dim(Partidos)[1]*100#43%
