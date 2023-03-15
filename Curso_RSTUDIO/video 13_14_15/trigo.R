@@ -1,7 +1,7 @@
   #Apartado 1
-  trigo= read.csv("trigo - pareja5.csv", header= TRUE, sep = ",")
+  trigo= read.csv("trigoComparativa.csv", header= TRUE, sep = ",")
   #Apartado 2
-  altura=trigo$altura
+  altura=trigo$planta1
   media=mean(altura)
   media
   mediana=median(altura)
@@ -37,3 +37,38 @@
   boxplot(altura,
           xlab="Trigo",ylab="Altura",notch = TRUE,col = c("blue"))
   abline(h=mean(altura),col=c("orange"))
+  
+  
+  # //////////////////////////////////////////////////
+  # Comparativa 
+  # /////////////////////////////////////////////////
+  
+  colores = topo.colors(2)
+  boxplot(trigo,
+          xlab="Trigo",ylab="Altura",notch = TRUE,col = colores)
+  abline(h=mean(trigo$planta1),col=c("orange"))
+  abline(h=mean(trigo$planta2),col=c("blue"))
+
+  media1 = mean(trigo$planta1)
+  media2 = mean(trigo$planta2)
+  N = length(trigo$planta1)
+  sigma1 = sqrt(var(trigo$planta1)*(N-1)/N)
+  sigma2 = sqrt(var(trigo$planta2)*(N-1)/N)
+  # reconvierto a factores  
+  trigo$planta1 = as.factor(trigo$planta1)
+  trigo$planta2 = as.factor(trigo$planta2)
+
+  # Gráfica del trigo
+  
+  t1 = table(trigo$planta1)
+  colores=terrain.colors(length(t1))
+  old.par=par()
+  par=(mar=c(0,0,0,0))
+  migrafica = barplot(t1 ,main="Primera medición de plantas ",
+                      beside=TRUE,xlab="X",ylab="Nº plantas",
+                      horiz=FALSE,col=colores, ylim=c(0,max(t1)+10))
+                      # legend.text =names(t1["0",]),
+                      # args.legend = list(x=20,y=40,cex=0.5,horiz=TRUE,text.col="darkgreen"))
+  abline(v=3, col = "blue")
+  text(migrafica, t1  + 0.1 , t1, cex=0.6,pos=3) 
+  par = old.par
