@@ -1,5 +1,10 @@
   #Apartado 1
   trigo= read.csv("trigoComparativa.csv", header= TRUE, sep = ",")
+  
+  # para los histogramas
+  altura1 = trigo$planta1
+  altura2 = trigo$planta2
+  
   #Apartado 2
   altura=trigo$planta1
   media=mean(altura)
@@ -54,21 +59,71 @@
   N = length(trigo$planta1)
   sigma1 = sqrt(var(trigo$planta1)*(N-1)/N)
   sigma2 = sqrt(var(trigo$planta2)*(N-1)/N)
-  # reconvierto a factores  
-  trigo$planta1 = as.factor(trigo$planta1)
-  trigo$planta2 = as.factor(trigo$planta2)
-
-  # Gráfica del trigo
   
-  t1 = table(trigo$planta1)
-  colores=terrain.colors(length(t1))
-  old.par=par()
-  par=(mar=c(0,0,0,0))
-  migrafica = barplot(t1 ,main="Primera medición de plantas ",
-                      beside=TRUE,xlab="X",ylab="Nº plantas",
-                      horiz=FALSE,col=colores, ylim=c(0,max(t1)+10))
-                      # legend.text =names(t1["0",]),
-                      # args.legend = list(x=20,y=40,cex=0.5,horiz=TRUE,text.col="darkgreen"))
-  abline(v=3, col = "blue")
-  text(migrafica, t1  + 0.1 , t1, cex=0.6,pos=3) 
-  par = old.par
+  # # reconvierto a factores  
+  # trigo$planta1 = as.factor(trigo$planta1)
+  # trigo$planta2 = as.factor(trigo$planta2)
+  # 
+  # # Gráfica del trigo: PRIMERA
+  # t1=table(trigo$planta1)
+  # colores=terrain.colors(length(t1))
+  # colores[which(names(t1)==as.character(round(media1,0)))]="black"
+  # colores[which(names(t1)==as.character(round(media1+3*sigma1,0)))]="red"
+  # colores[which(names(t1)==as.character(round(media1-3*sigma1,0)))]="red"
+  # old.par=par()
+  # par=(mar=c(0,0,0,0))
+  # migrafica = barplot(t1 ,main="Primera medición de plantas ",
+  #                     beside=TRUE,xlab="X",ylab="Nº plantas",
+  #                     horiz=FALSE,col=colores, ylim=c(0,max(t1)+10))
+  #                     # lend.text =names(t1["0",]),
+  #                     # args.legend = list(x=20,y=40,cex=0.5,horiz=TRUE,text.col="darkgreen"))
+  # text(migrafica, t1  + 0.1 , t1, cex=0.6,pos=3) 
+  # par = old.par
+  # 
+  # 
+  # 
+  # # Gráfica del trigo: SEGUNDA
+  # t2=table(trigo$planta2)
+  # colores=terrain.colors(length(t2))
+  # colores[which(names(t2)==as.character(round(media2,0)))]="black"
+  # colores[which(names(t2)==as.character(round(media2+3*sigma2,0)))]="red"
+  # colores[which(names(t2)==as.character(round(media2-3*sigma2,0)))]="red"
+  # old.par=par()
+  # par=(mar=c(0,0,0,0))
+  # migrafica = barplot(t2 ,main="Segunda medición de plantas ",
+  #                     beside=TRUE,xlab="X",ylab="Nº plantas",
+  #                     horiz=FALSE,col=colores, ylim=c(0,max(t2)+10))
+  # # lend.text =names(t1["0",]),
+  # # args.legend = list(x=20,y=40,cex=0.5,horiz=TRUE,text.col="darkgreen"))
+  # text(migrafica, t2  + 0.1 , t2, cex=0.6,pos=3) 
+  # par = old.par
+  
+  
+  # función histograma
+  hist_abs=function(x,L,nombre) {
+    colores = topo.colors(length(L))
+    h=hist(x,breaks=L,right=FALSE,freq=FALSE,
+           xaxt="n",col=colores,
+           main=paste("Histograma de frecuencias absolutas",nombre),
+           xlab="Intervalos",
+           ylab="Frecuencias relativas")
+    axis(1,at=L)
+    text(h$mids,h$density/2,labels=h$counts,col="blue")
+    abline(v=mean(x),col="black")
+    text(mean(x),max(h$density),labels=paste0("Media: ",round(mean(x),1)),col="Darkgreen",pos=4)
+    n=length(x)
+    DT=sd(x)*sqrt((n-1)/n)
+    abline(v=mean(x)+3*DT,col="black")
+    text(mean(x)+3*DT,max(h$density),labels=paste0("+3DT: ",round(mean(x)+3*DT,1)),col="Darkgreen",pos=4)
+    abline(v=mean(x)-3*DT,col="black")
+    text(mean(x)-3*DT,max(h$density),labels=paste0("-3DT: ",round(mean(x)-3*DT,1)),col="Darkgreen",pos=4)
+    lines(density(x),col="red",lwd=2)
+  }
+  
+  #Histograma altura 2
+  hist_abs(altura2,seq(min(altura2),max(altura2),by=1),"altura 2")
+
+  #Histograma altura 1
+  hist_abs(altura1,seq(min(altura1),max(altura1),by=1),"altura 1")
+  
+  
