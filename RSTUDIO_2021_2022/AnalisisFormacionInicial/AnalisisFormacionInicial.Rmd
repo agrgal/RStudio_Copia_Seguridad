@@ -1,0 +1,292 @@
+---
+title: "Análisis de la formación inicial proyecto STEAM"
+author: "Aurelio Gallardo"
+date: "22 de Diciembre de 2021"
+lang: es
+output: 
+  pdf_document:
+    number_sections: true
+    toc: true
+    pandoc_args: --listings
+    includes:
+      in_header: preamble.tex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
+```
+
+```{r iniciales, echo=FALSE, message=FALSE}
+library(printr)
+# Datos Cádiz grupo 2
+datos = read.csv2("datosCadizGrupo2.csv",header=TRUE,sep=",")
+trim <- function (x) gsub("^\\s+|\\s+$", "", x)
+# Para gráfica 1
+especialidadCoordinadores = toupper(substr(datos$Especialidad.de.la.persona.que.coordina.el.proyecto,1,3))
+especialidadCoordinadores = as.factor(especialidadCoordinadores)
+ademas= as.factor(datos$Además.de.la.persona.que.coordina.el.proyecto...cuántos.miembros.del.claustro.participan.activamente.en.el.mismo.)
+restoEspecialidades = strsplit(as.character(datos$X.De.qué.especialidad.son.el.resto.de.participantes.en.el.proyecto),",")
+restoEspecialidades = as.factor(trim(unlist(restoEspecialidades, use.names = FALSE)))
+``` 
+\vspace{1pt}
+<!-- \par\noindent\rule{\textwidth}{0.4pt} -->
+\begin{center}
+\par\noindent\rule{20em}{0.4pt}
+\end{center}
+<!-- forma de introducir una línea horizontal que ocupe todo el ancho -->
+\vspace{1pt}
+
+<!-- =======================  -->
+<!-- =======================  -->
+
+# Introducción
+
+Analizamos un total de \color[rgb]{0.522,0.027,0.192}**`r dim(datos)[1]`** \color{black}registros, cada uno aportado por cada coordinador/a del proyecto.
+
+<!-- =======================  -->
+<!-- =======================  -->
+
+# Análisis de resultados
+
+<!-- =======================  -->
+
+## Especialidad del coordinador/a
+
+Gráfica con el número de coordinadores/as por especialidad, añadiendo porcentaje. 
+
+```{r graficaCoordinador,  out.width="70%", fig.align="center", fig.height=4, echo=FALSE}
+# https://r4ds.had.co.nz/graphics-for-communication.html#figure-sizing
+library(RColorBrewer)
+colorines <- brewer.pal(8, "Set2")
+coordinadoresPlot= plot(especialidadCoordinadores, 
+        main="Nº y porcentaje de especialidades de los coordinadores",
+        col=colorines,
+        names.arg= levels(especialidadCoordinadores),
+        ylim=c(0,2+max(table(especialidadCoordinadores))),
+        cex.names = 1, cex.lab=0.8, cex.main=0.8,
+        las=1, # orientación vertical
+        font.axis=2, # bold 
+        axis.lty=0, # línea horizontal
+        axes=TRUE
+        )
+text(coordinadoresPlot,cex=1,paste0(table(especialidadCoordinadores)," - ",round(100*prop.table(table(especialidadCoordinadores)),2),"%")
+     ,y=table(especialidadCoordinadores)+1,col="black",srt=0,font=2)
+```
+
+<!-- =======================  -->
+
+## Otros participantes
+
+Número de participantes que, aparte del coordinador/a, participan en el proyecto. 
+
+```{r graficaAdemas,  out.width="70%", fig.align="center", fig.height=4, echo=FALSE}
+# https://r4ds.had.co.nz/graphics-for-communication.html#figure-sizing
+library(RColorBrewer)
+colorines <- brewer.pal(8, "Set3")
+coordinadoresPlot= plot(ademas, 
+        main="Nº y porcentaje de participantes en el proyecto",
+        col=colorines,
+        names.arg= levels(ademas),
+        ylim=c(0,2+max(table(ademas))),
+        cex.names = 1, cex.lab=0.8, cex.main=0.8,
+        las=1, # orientación vertical
+        font.axis=2, # bold 
+        axis.lty=0, # línea horizontal
+        axes=TRUE
+        )
+text(coordinadoresPlot,cex=1,paste0(table(ademas)," - ",round(100*prop.table(table(ademas)),2),"%")
+     ,y=table(ademas)+1,col="black",srt=0,font=2)
+```
+
+<!-- =======================  -->
+
+## Especialidades del resto de participantes
+
+Nuestros participantes pertenecen a \color[rgb]{0.522,0.027,0.192}**`r length(levels(restoEspecialidades))`** \color{black} especialidades distintas, distribuidas de la siguiente forma: 
+
+<!-- Gráfica deshabilitada -->
+```{r graficaAdemasEspecialidades, eval=FALSE, fig.align="center", fig.height=4, include=FALSE, out.width="70%"}
+# https://r4ds.had.co.nz/graphics-for-communication.html#figure-sizing
+library(RColorBrewer)
+colorines <- brewer.pal(12, "Set3")
+coordinadoresPlot= plot(restoEspecialidades, 
+        main="Nº y porcentaje de participantes en el proyecto",
+        col=colorines,
+        names.arg= levels(restoEspecialidades),
+        ylim=c(0,2+max(table(restoEspecialidades))),
+        cex.names = 0.6, cex.lab=0.8, cex.main=0.8,
+        las=2, # orientación vertical
+        font.axis=2, # bold 
+        axis.lty=0, # línea horizontal
+        axes=TRUE
+        )
+text(coordinadoresPlot,cex=0.5,paste0(table(restoEspecialidades)," - ",round(100*prop.table(table(restoEspecialidades)),2),"%")
+     ,y=table(restoEspecialidades)+1,col="black",srt=2,font=2)
+```
+<!-- ********************  -->
+
+```{r graficaAdemasEspecialidades2,  out.width="70%", fig.align="center", fig.height=4, echo=FALSE}
+# https://r4ds.had.co.nz/graphics-for-communication.html#figure-sizing
+library(RColorBrewer)
+library(ggplot2)
+library(scales)
+library(ggrepel)
+x = restoEspecialidades
+df = data.frame(prop.table(table(x)))
+df$N=data.frame(table(x))$Freq
+# df=df[order(df$Freq, decreasing=TRUE),] #Ordeno el datafre según la frecuencia
+df$pos = (cumsum(c(0, df$Freq)) + c(df$Freq / 2, .01))[1:nrow(df)]
+colourCount = length(unique(df$x))
+getPalette = colorRampPalette(brewer.pal(12, "Paired"))
+bp<- ggplot(df, aes(x="", y=Freq, fill=x))+
+     geom_bar(width = 1, stat = "identity",color="white",
+              position = position_stack(reverse = TRUE), ) + 
+              # para que funcione el cálculo con df$pos
+              # hay que añadir position stack reverse
+     coord_polar("y") + 
+     # geom_text(aes(label = percent(Freq/100),x=1.7), 
+     #         position = position_stack(vjust = 0.5),size=3) +
+     geom_text_repel(aes(x = 1.4, y = pos, label = paste0(N," - ",percent(Freq))), 
+                    nudge_x = .3, 
+                    segment.size = 0.3, 
+                    show.legend = FALSE) +
+     scale_fill_manual(values=getPalette(colourCount))+
+     theme_minimal()+
+     theme(axis.text.x=element_blank(),
+            axis.title.x = element_blank(),
+            axis.title.y = element_blank(),
+            panel.border = element_blank(),
+            panel.grid=element_blank(),
+            axis.ticks = element_blank())+
+     guides(fill = guide_legend(title = "Nº y % del resto de especialidades"))
+bp #mostrar el gráfico
+
+```
+
+<!-- =======================  -->
+
+## Optativa de Robótica en el centro.
+
+Si cuenta el centro con materia optativa de Robótica, o la tuvo el año pasado. Valores en número y porcentaje. 
+
+```{r graficaOpt,  out.width="90%", fig.align="center", fig.height=3, echo=FALSE}
+# https://r4ds.had.co.nz/graphics-for-communication.html#figure-sizing
+library(RColorBrewer)
+library(ggplot2)
+library(scales)
+library(ggrepel)
+library(cowplot)
+x=as.factor(datos$X.Cuenta.el.centro.con.materia.optativa.de.Robótica.este.curso.)
+df = data.frame(prop.table(table(x)))
+df$N=data.frame(table(x))$Freq
+# df=df[order(df$Freq, decreasing=TRUE),] #Ordeno el datafre según la frecuencia
+df$pos = (cumsum(c(0, df$Freq)) + c(df$Freq / 2, .01))[1:nrow(df)]
+colourCount = length(unique(df$x))
+getPalette = colorRampPalette(brewer.pal(12, "Paired"))
+bp1<- ggplot(df, aes(x="", y=Freq, fill=x))+
+     geom_bar(width = 1, stat = "identity",color="white",
+              position = position_stack(reverse = TRUE), ) + 
+              # para que funcione el cálculo con df$pos
+              # hay que añadir position stack reverse
+     coord_polar("y") + 
+     # geom_text(aes(label = percent(Freq/100),x=1.7), 
+     #         position = position_stack(vjust = 0.5),size=3) +
+     geom_text_repel(aes(x = 1.4, y = pos, label = paste0(N," - ",percent(Freq))), 
+                    nudge_x = .3, 
+                    segment.size = 0.3, 
+                    show.legend = FALSE) +
+     scale_fill_manual(values=getPalette(colourCount))+
+     theme_minimal()+
+     theme(axis.text.x=element_blank(),
+            axis.title.x = element_blank(),
+            axis.title.y = element_blank(),
+            panel.border = element_blank(),
+            panel.grid=element_blank(),
+            axis.ticks = element_blank(),
+            plot.title = element_text(hjust = 0.5),
+            plot.subtitle = element_text(hjust = 0.5),
+            legend.position = "bottom")+
+     ggtitle(label = "¿Tienen optativa de Robótica?",
+              subtitle = "Este año")+
+     guides(fill = guide_legend(title = "A"))
+# ---------
+# siguiente
+# --------
+x=as.factor(datos$X.Contabais.con.ella.con.anterioridad.a.este.curso.)
+df = data.frame(prop.table(table(x)))
+df$N=data.frame(table(x))$Freq
+# df=df[order(df$Freq, decreasing=TRUE),] #Ordeno el datafre según la frecuencia
+df$pos = (cumsum(c(0, df$Freq)) + c(df$Freq / 2, .01))[1:nrow(df)]
+colourCount = length(unique(df$x))
+getPalette = colorRampPalette(brewer.pal(8, "Dark2"))
+bp2<- ggplot(df, aes(x="", y=Freq, fill=x))+
+     geom_bar(width = 1, stat = "identity",color="white",
+              position = position_stack(reverse = TRUE), ) + 
+              # para que funcione el cálculo con df$pos
+              # hay que añadir position stack reverse
+     coord_polar("y") + 
+     # geom_text(aes(label = percent(Freq/100),x=1.7), 
+     #         position = position_stack(vjust = 0.5),size=3) +
+     geom_text_repel(aes(x = 1.4, y = pos, label = paste0(N," - ",percent(Freq))), 
+                    nudge_x = .3, 
+                    segment.size = 0.3, 
+                    show.legend = FALSE) +
+     scale_fill_manual(values=getPalette(colourCount))+
+     theme_minimal()+
+     theme(axis.text.x=element_blank(),
+            axis.title.x = element_blank(),
+            axis.title.y = element_blank(),
+            panel.border = element_blank(),
+            panel.grid=element_blank(),
+            axis.ticks = element_blank(),
+            plot.title = element_text(hjust = 0.5),
+            plot.subtitle = element_text(hjust = 0.5),
+            legend.position = "bottom")+
+     ggtitle(label = "¿Tienen optativa de Robótica?",
+              subtitle = "Años anteriores")+
+     guides(fill = guide_legend(title = "B"))
+
+# mostrarlos
+plot_grid(bp1, bp2, hjust=-0.1, ncol = 2, nrow = 1)
+```
+
+<!-- =======================  -->
+
+## Experiencia
+
+```{r graficaExperiencia,  out.width="90%", fig.align="center", fig.height=3, echo=FALSE}
+# https://r4ds.had.co.nz/graphics-for-communication.html#figure-sizing
+library(RColorBrewer)
+library(ggplot2)
+library(scales)
+library(ggrepel)
+library(cowplot)
+x=as.factor(datos$Valora.del.0.al.10.tu.experiencia.y.destreza.con.todo.lo.relacionado.con.la.robótica.educativa)
+df = data.frame(prop.table(table(x)))
+df$N=data.frame(table(x))$Freq
+# df=df[order(df$Freq, decreasing=TRUE),] #Ordeno el datafre según la frecuencia
+colourCount = length(unique(df$x))
+getPalette = colorRampPalette(brewer.pal(12, "Paired"))
+bp1<- ggplot(df, aes(x=x))+
+      geom_histogram(stat_count())+
+      scale_fill_manual(values=getPalette(colourCount))+
+      theme_minimal()+
+      theme(axis.text.x=element_blank(),
+            axis.title.x = element_blank(),
+            axis.title.y = element_blank(),
+            panel.border = element_blank(),
+            panel.grid=element_blank(),
+            axis.ticks = element_blank(),
+            plot.title = element_text(hjust = 0.5),
+            plot.subtitle = element_text(hjust = 0.5),
+            legend.position = "bottom")+
+     ggtitle(label = "Experiencia",
+              subtitle = "Este año")+
+     guides(fill = guide_legend(title = "A"))
+
+bp1
+
+# mostrarlos
+# plot_grid(bp1, bp2, hjust=-0.1, ncol = 2, nrow = 1)
+```
