@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 Incluimos los datos sobre la altura de las plantas de trigo con la orden **trigo= read.csv("trigo.csv", header= TRUE, sep = ",")** 
 
 ```{r datos,echo=FALSE, message=FALSE}
-i = 10
+i = 1
 nombre = paste0("trigo - pareja",as.character(i),".csv")
     trigo= read.csv(nombre, header= TRUE, sep = ",")
       altura=trigo$altura
@@ -73,9 +73,30 @@ Cálculos estadísticos de dispersión
 
 ```{r datos4, echo = FALSE}
   #Apartado 7
-  altura[c(2000)]=max(altura)*1.5 #--> cambia el último dato a 1.5 veces el máximo
+  # altura[c(2000)]=max(altura)*1.5 #--> cambia el último dato a 1.5 veces el máximo
   #Apartado 8
   boxplot(altura,
           xlab="Trigo",ylab="Altura",notch = TRUE,col = c("blue"))
   abline(h=mean(altura),col=c("orange"))
+```
+```{r datos5, echo = FALSE}
+    x=altura
+    L = seq(min(altura),max(altura),by=1)
+    colores = terrain.colors(length(L))
+    h=hist(x,breaks=L,right=FALSE,freq=FALSE,
+           xaxt="n",col=colores,
+           main=paste("Histograma de frecuencias absolutas",""),
+           xlab="Intervalos",
+           ylab="Frecuencias relativas")
+    axis(1,at=L)
+    text(h$mids,h$density/2,labels=h$counts,col="blue")
+    abline(v=mean(x),col="black")
+    text(mean(x),max(h$density),labels=paste0("Media: ",round(mean(x),1)),col="Darkgreen",pos=4)
+    n=length(x)
+    DT=sd(x)*sqrt((n-1)/n)
+    abline(v=mean(x)+3*DT,col="black")
+    text(mean(x)+3*DT,max(h$density),labels=paste0("+3DT: ",round(mean(x)+3*DT,1)),col="Darkgreen",pos=4)
+    abline(v=mean(x)-3*DT,col="black")
+    text(mean(x)-3*DT,max(h$density),labels=paste0("-3DT: ",round(mean(x)-3*DT,1)),col="Darkgreen",pos=4)
+    lines(density(x),col="red",lwd=2)
 ```

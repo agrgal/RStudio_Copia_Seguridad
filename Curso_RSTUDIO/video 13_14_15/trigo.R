@@ -6,7 +6,7 @@
   altura2 = trigo$planta2
   
   #Apartado 2
-  altura=trigo$planta1
+  altura=altura1
   media=mean(altura)
   media
   mediana=median(altura)
