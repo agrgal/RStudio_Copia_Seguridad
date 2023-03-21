@@ -16,7 +16,7 @@ desviacionesNormales = sapply(ruleta,sdN)
 
 # Matriz tipificada
 ruletaTipificada = scale(ruleta,center=TRUE,scale=desviacionesNormales)
-ruletaTipificada = dataframe (ruletaTipificada)
+ruletaTipificada = data.frame(ruletaTipificada)
 ruletaTipificada
 
 # Con faltas y suspensos
@@ -39,7 +39,8 @@ varianzasNormales
 round(cor(ruleta),2)
 # que es lo mismo que la covarianza de la matriz tipificada
 n=dim(ruletaTipificada)[1]
-cov(ruletaTipificada)*(n-1)/n
+round(cov(ruletaTipificada)*(n-1)/n,2)
+
 
 
 

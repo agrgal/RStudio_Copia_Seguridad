@@ -1,0 +1,103 @@
+---
+title: "Trabajo sobre el trigo. 2 variables"
+author: "Aurelio Gallardo"
+date: "20 de Marzo de 2023"
+lang: es
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Trabajo sobre el trigo: altura y número de granos
+
+Incluimos los datos sobre la altura y los granos de las plantas de trigo con la orden **trigo= read.csv("2vartrigo.csv", header= TRUE, sep = ",")** 
+
+```{r datos,echo=FALSE, message=FALSE}
+# funciones
+varN = function(x) { var(x)*(length(x)-1)/length(x)}
+sdN = function(x) {sqrt(varN(x))}
+
+i = 10
+nombre = paste0("2var_trigo - pareja",as.character(i),".csv")
+trigo= read.csv(nombre, header= TRUE, sep = ",")
+
+# (2) Medias, medianas
+medias = sapply(trigo,mean)
+medianas = sapply(trigo,median)
+
+# (3) Varianzas y desviaciones típicas, muestrales y normales
+varianzasM = sapply(trigo,var)
+dTM = sapply(trigo,sd)
+varianzasN = sapply(trigo,varN)
+dTN = sapply(trigo,sdN) # cuando el número de casos es muy grande,
+# las varianzas o desv típicas son parecidas
+
+# (4) Matriz tipificada
+# es restar la media y dividir entre la desviación típica normalizada
+trigoTIP = scale(trigo,center=TRUE,scale=dTN)
+trigoTIP = data.frame(trigoTIP)
+
+# (5) Covarianza muestral y normal
+n = dim(trigo)[1]
+CM = cov(trigo) # Muestral
+CN = cov(trigo)*(n-1)/n #Normalizada
+
+# (6) Correlaciones
+COR = cor(trigo) # se puede decir que existe cierta relación entre la altura de las 
+           # plantas y el número de granos.
+```
+
+# Opción pareja `r i`
+
+La media de los datos de altura es `r medias[1]` cm , la mediana `r medianas[1]` cm, la varianza y la desviación típica muestral `r varianzasM[1]` y `r dTM[1]` en cm. La varianza y desviación típica normal `r varianzasN[1]` y `r dTN[1]` en cm.
+
+La media de los datos de granos es `r medias[2]` granos , la mediana `r medianas[2]` granos, la varianza y la desviación típica muestral `r varianzasM[2]` y `r dTM[2]` en granos. La varianza y desviación típica normal `r varianzasN[2]` y `r dTN[2]` en granos.
+
+La matriz de covarianza muestral sería: 
+```{r datos2,echo=TRUE, message=FALSE, fig.align="center"}
+CM
+```
+
+La matriz de covarianza normal sería: 
+
+```{r datos3,echo=TRUE, message=FALSE, fig.align="center"}
+CN
+```
+
+Y la matriz de correlación:
+\center
+```{r datos4,echo=TRUE, message=FALSE,  fig.align="center"}
+COR
+```
+\center 
+
+\pagebreak
+\center __Gráfica boxplot de los datos de trigo__ \center
+
+```{r datos5, echo = FALSE, fig.align="center"}
+# (7) Gráfica boxplot
+boxplot(trigo,data=trigo,col=c("red","blue"))
+```
+
+\pagebreak
+\center __Gráfica boxplot de los datos de trigo, matriz tipificada__ \center
+```{r datos6, echo = FALSE, fig.align="center"}
+# (7) Gráfica boxplot
+boxplot(trigoTIP,data=trigoTIP,col=c("red","blue"))
+```
+
+\pagebreak
+\center __Gráfica según un factor creado adhoc__ \center
+```{r datos7, echo = FALSE, fig.align="center"}
+# (8) Creo un factor con el número de granos, por ejemplo
+vectorBreak =seq(min(trigo$granos)-1,max(trigo$granos)+1,length.out=6)
+ngranos = cut (trigo$granos, breaks=vectorBreak, right=FALSE,
+               labels=c("muy pocos","pocos","suficientes","bastantes","muchos"))
+trigo$cuantos = ngranos # introduzco en el dataframe
+# y represento por esos niveles
+boxplot (altura~cuantos, data=trigo, col=terrain.colors(length(levels(ngranos))))
+```

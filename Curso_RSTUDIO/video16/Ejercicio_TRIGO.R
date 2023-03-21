@@ -3,7 +3,7 @@ varN = function(x) { var(x)*(length(x)-1)/length(x)}
 sdN = function(x) {sqrt(varN(x))}
 
 # Obtenemos los datos
-trigo = read.csv2("trigo_dos_variables.csv",header=TRUE,sep=",")
+trigo = read.csv2("2var_trigo - pareja2.csv",header=TRUE,sep=",")
 
 # (2) Medias, medianas
 medias = sapply(trigo,mean)
@@ -35,7 +35,7 @@ boxplot(trigo,data=trigo,col=c("red","blue"))
 boxplot(trigoTIP,data=trigoTIP,col=c("red","blue"))
 
 # (8) Creo un factor con el número de granos, por ejemplo
-vectorBreak =seq(min(trigo$granos)-1,max(trigo$granos)+1,5)
+vectorBreak =seq(min(trigo$granos)-1,max(trigo$granos)+1,length.out=6)
 ngranos = cut (trigo$granos, breaks=vectorBreak, right=FALSE,
                labels=c("muy pocos","pocos","suficientes","bastantes","muchos"))
 trigo$cuantos = ngranos # introduzco en el dataframe
