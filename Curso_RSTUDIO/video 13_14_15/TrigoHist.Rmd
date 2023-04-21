@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 Incluimos los datos sobre la altura de las plantas de trigo con la orden **trigo= read.csv("trigo.csv", header= TRUE, sep = ",")** 
 
 ```{r datos,echo=FALSE, message=FALSE}
-i = 1
+i = 10
 nombre = paste0("trigo - pareja",as.character(i),".csv")
     trigo= read.csv(nombre, header= TRUE, sep = ",")
       altura=trigo$altura
